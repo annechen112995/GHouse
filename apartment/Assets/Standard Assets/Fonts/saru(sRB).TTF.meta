@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 86e5f0f86001243bd8d4c6a6a8376edb
+timeCreated: 1491690087
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: saru (sRB)
+  fontNames:
+  - saru (sRB)
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
