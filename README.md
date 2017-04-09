@@ -27,4 +27,4 @@ We plan to continue working on this app after the completion of this hackathon. 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/moGePqK.gif' title='Cat and House Walkthrough' width='' alt='Cat and House Walkthrough' />
+<img src='https://vimeo.com/212483017' title='Cat and House Walkthrough' width='' alt='Cat and House Walkthrough' />
