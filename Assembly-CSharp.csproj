@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\FridgeClean\Script\BackButtonFromFridge.cs" />
      <Compile Include="Assets\FridgeClean\Script\FoodBehaviourScript.cs" />
      <Compile Include="Assets\FridgeClean\Script\FridgeClean_Apple.cs" />
      <Compile Include="Assets\FridgeClean\Script\FridgeClean_AppleCore.cs" />
@@ -58,6 +59,7 @@
      <Compile Include="Assets\Menu\Script\Menu.cs" />
      <Compile Include="Assets\SceneAptmt\Scripts\BackButtonAptmt.cs" />
      <Compile Include="Assets\SceneAptmt\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\SceneAptmt\Scripts\LaunchFridgeGame.cs" />
      <Compile Include="Assets\StartGame\Script\BackButtonStart.cs" />
      <Compile Include="Assets\StartGame\Script\ClickStart.cs" />
  <Reference Include="UnityEngine.Analytics">
