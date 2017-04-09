@@ -20,6 +20,13 @@ public class BuyFish : MonoBehaviour {
 		}
 	}
 
+	public void ClickFish2() {
+		// Clicked fish, decrease number of coins
+		if ((PlayerPrefs.GetInt("coins") - 25) > 0) {
+			PlayerPrefs.SetInt("coins", PlayerPrefs.GetInt ("coins") - 25);
+		}
+	}
+
 	void OnGUI() {
 		numCoins = PlayerPrefs.GetInt("coins");
 		guiStyle.fontSize = 50; //change the font size
