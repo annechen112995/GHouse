@@ -5,6 +5,7 @@ using UnityEngine;
 public class FoodBehaviourScript : MonoBehaviour {
 
 	public float spawnTime;				//Spawn Time
+	public float spawnRate = 1;
 	public GameObject Apple;			//Apple prefab
 	public GameObject AppleCore;		//AppleCore prefab
 
@@ -14,39 +15,28 @@ public class FoodBehaviourScript : MonoBehaviour {
 	void Start()
 	{
 		//Start the spawn update
-		StartCoroutine("Spawn");
+		//call SpawnEnemy based on spawnRate
+		InvokeRepeating("Spawn", 1, spawnRate);  
 	}
 
 	void Update()
 	{
-		if (count < 5) 
-		{
-			spawned = false;
-			StartCoroutine("Spawn");
-		}
+		
 	}
 
-	IEnumerator Spawn()
+	public void Spawn()
 	{
-		while (count < 4 && spawned == false) 
+		GameObject prefab = Apple;
+		//If random is over 30
+		if (Random.Range(0,100) < 30)
 		{
-			count += 1;
-			//Wait spawnTime
-			yield return new WaitForSeconds(spawnTime);
-			//Spawn prefab is apple
-			GameObject prefab = Apple;
-			Apple.SetActive (true);
-			//If random is over 30
-			if (Random.Range(0,100) < 30)
-			{
-				//Spawn prefab is apple core
-				prefab = AppleCore;
-			}
-				//Spawn prefab add random position
-				GameObject go = Instantiate (prefab, new Vector3 (Random.Range (-50, 60), Random.Range (-60, 50), 0),
-					Quaternion.Euler (0, 0, Random.Range (-100, 50))) as GameObject;
+			//Spawn prefab is apple core
+			prefab = AppleCore;
 		}
-		spawned = true;
+
+		//Spawn prefab add random position  
+		GameObject go = Instantiate (prefab, new Vector3 (Random.Range (-50, 60), Random.Range (-60, 50), 0),
+			Quaternion.Euler (0, 0, Random.Range (-100, 50))) as GameObject;       
 	}
 
 }
