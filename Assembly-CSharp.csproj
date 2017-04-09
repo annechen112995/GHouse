@@ -48,8 +48,6 @@
   <ItemGroup>
      <Compile Include="Assets\FridgeClean\Script\BackButtonFromFridge.cs" />
      <Compile Include="Assets\FridgeClean\Script\FoodBehaviourScript.cs" />
-     <Compile Include="Assets\FridgeClean\Script\FridgeClean_Apple.cs" />
-     <Compile Include="Assets\FridgeClean\Script\FridgeClean_Core.cs" />
      <Compile Include="Assets\FridgeClean\Script\FridgeClean_Player.cs" />
      <Compile Include="Assets\Laundry\ChangeDisplay.cs" />
      <Compile Include="Assets\Laundry\Scripts\BackButtonFromLaundry.cs" />
@@ -68,10 +66,18 @@
      <Compile Include="Assets\SceneCockroach\BackButtonFromRoach.cs" />
      <Compile Include="Assets\StartGame\Script\BackButtonStart.cs" />
      <Compile Include="Assets\StartGame\Script\ClickStart.cs" />
+<<<<<<< HEAD
+=======
+     <Compile Include="Assets\StartGame\Script\GameControl.cs" />
+>>>>>>> 77125f48eec3c4b06f12baedb60159f9fadeaf2c
      <Compile Include="Assets\cockroachManagerScript.cs" />
      <Compile Include="Assets\liveScript.cs" />
      <Compile Include="Assets\roachScript.cs" />
      <Compile Include="Assets\scoreScript.cs" />
+<<<<<<< HEAD
+=======
+     <Compile Include="Assets\testingApple.cs" />
+>>>>>>> 77125f48eec3c4b06f12baedb60159f9fadeaf2c
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
