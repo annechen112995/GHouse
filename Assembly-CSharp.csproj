@@ -55,8 +55,6 @@
      <Compile Include="Assets\Menu\Script\Menu.cs" />
      <Compile Include="Assets\SceneAptmt\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\StartGame\Script\ClickStart.cs" />
-<<<<<<< HEAD
-=======
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
@@ -78,7 +76,6 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
->>>>>>> e9f342a15a2345ce49f8732688fcd629cfdd4dcc
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
