@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 667018423}
   m_Layer: 0
   m_Name: Apple
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -304,6 +304,8 @@ MonoBehaviour:
   AppleCore: {fileID: 1669980651}
   maxX: 0
   minX: 0
+  count: 0
+  spawned: 0
 --- !u!1 &1174278475
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,6 +392,8 @@ MonoBehaviour:
   AppleCore: {fileID: 1669980651}
   maxX: 0
   minX: 0
+  count: 0
+  spawned: 0
 --- !u!1 &1384616992
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,3 +566,5 @@ MonoBehaviour:
   AppleCore: {fileID: 1669980651}
   maxX: 0
   minX: 0
+  count: 0
+  spawned: 0
