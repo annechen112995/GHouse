@@ -7,8 +7,6 @@ public class FoodBehaviourScript : MonoBehaviour {
 	public float spawnTime;				//Spawn Time
 	public GameObject Apple;			//Apple prefab
 	public GameObject AppleCore;		//AppleCore prefab
-	public float maxX;					//Max x spawn position
-	public float minX;		 			//Min x spawn position
 
 	public int count = 0;
 	public bool spawned = false;
