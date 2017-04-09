@@ -1,6 +1,15 @@
 Base path: /Applications/Unity/Unity.app/Contents
 Cmd: initializeCompiler
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> newbranch
 Cmd: compileSnippet
   api=14 type=0 insize=1555 outsize=1606 kw= pd=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_DESKTOP UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA ok=1
 Cmd: compileSnippet
   api=14 type=1 insize=1555 outsize=1336 kw= pd=UNITY_NO_DXT5nm UNITY_ENABLE_REFLECTION_BUFFERS UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 SHADER_API_DESKTOP UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA ok=1
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f9f29c22c076b6a22465f3d25f641371707e5534
+>>>>>>> newbranch

@@ -2,11 +2,14 @@ sceneSetups:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/SceneCockroach/cockroachGame.unity
 =======
 - path: Assets/FridgeClean/Scene/Scene2.unity
 >>>>>>> 1f68e2b078ca113e20347abe0a934b9a38acebc4
 =======
+=======
+>>>>>>> newbranch
 - path: Assets/Scenes/Scene0.unity
 >>>>>>> newbranch
 =======
