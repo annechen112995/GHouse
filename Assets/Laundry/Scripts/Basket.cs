@@ -51,12 +51,14 @@ public class Basket : MonoBehaviour {
 			// if there is more room than number of dirty cloth
 			if (toTake > currentDirty) {
 				GameObject.Find("GameManager").GetComponent<managerScript>().numHolding += currentDirty;
-				GameObject.Find("GameManager").GetComponent<managerScript>().numDirtyCloth = 0;
+				GameObject.Find("GameManager").GetComponent<managerScript>().numToWash += currentDirty;
+				GameObject.Find("GameManager").GetComponent<managerScript>().numDirtyCloth -= currentDirty;
 			}
 
 			// if there is more dirty cloth than room
 			else {
-				GameObject.Find("GameManager").GetComponent<managerScript>().numHolding = 10;
+				GameObject.Find("GameManager").GetComponent<managerScript>().numHolding += toTake;
+				GameObject.Find("GameManager").GetComponent<managerScript>().numToWash += toTake;
 				GameObject.Find("GameManager").GetComponent<managerScript>().numDirtyCloth -= toTake;
 			}
 

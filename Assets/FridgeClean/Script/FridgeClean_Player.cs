@@ -23,7 +23,6 @@ public class FridgeClean_Player : MonoBehaviour
 		//Set sleep timeout to never
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
 		foodBehav = this.gameObject.GetComponent<FoodBehaviourScript>();
-		foodBehav.enabled = false;
 	}
 
 	void Update ()
@@ -38,33 +37,31 @@ public class FridgeClean_Player : MonoBehaviour
 		if (lives < 1)
 		{			
 			//Kill
+			foodBehav.CancelInvoke();
 			dead = true;
 		}
-		while (count <= 0) {
-			foodBehav.enabled = true;
-			count += 6;
-		} 
-		foodBehav.enabled = false;
-			
 	}
 
 	void OnMouseDown()
 	{
-		Object.Destroy (this.gameObject);
+		
 		//If we hits an apple core
-		if (this.gameObject.tag == "Untagged")
-		{
-			Instantiate(splat,new Vector3(transform.position.x,transform.position.y,1),Quaternion.identity);
+		if (this.gameObject != null && this.gameObject.tag == "Untagged") {
+			//Instantiate (splat, new Vector3 (transform.position.x, transform.position.y, 1), Quaternion.identity);
 			//Add score
 			score += 1;
+			count--;
+			Object.Destroy (this.gameObject);
 		}
 		//If we hits an apple
-		else if (this.gameObject.tag == "Respawn")
-		{
+		else if (this.gameObject != null && this.gameObject.tag == "Respawn") {
 			//Removes a life
 			lives--;
+			count--;
+			Object.Destroy (this.gameObject);
+		} else {
+			score -= 1;
 		}
-		count--;
 	}
 
 	// Give the player a chance to click the food.

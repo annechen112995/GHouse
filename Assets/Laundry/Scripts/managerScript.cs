@@ -1,22 +1,38 @@
-﻿using System.Collections;
+﻿using UnityEngine.SceneManagement;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class managerScript : MonoBehaviour {
-	public int numDirtyCloth;
-	public int numHolding;
-
-	public Text numDirty;
-	public Text numHold;
+	public int numDirtyCloth;  // number of dirty cloth in basket
+	public int numHolding; // total number of cloth on hand
+	public int numToWash; // number of cloth waiting for washer
+	public int numToDry; // number of cloth waiting for dryer
+	public int coins; // coin
 
 	float timer = 1f;
 	float delay = 1f;
 
-	// Use this for initialization
+
+	static bool created = false;
+
+	
 	void Start () {
-		numDirtyCloth = 10;
-		numHolding = 0;
+		if (!created) {
+			DontDestroyOnLoad(this.gameObject);
+			created = true;
+			numDirtyCloth = 10;  // number of dirty cloth in basket
+			numHolding = 0; // total number of cloth on hand
+			numToWash = 0; // number of cloth waiting for washer
+			numToDry = 0; // number of cloth waiting for dryer
+			coins = 0; // coin
+
+		}
+		else {
+			Destroy(this.gameObject);
+		}
 	}
 	
 	// Update is called once per frame
@@ -30,9 +46,10 @@ public class managerScript : MonoBehaviour {
 			timer = delay;
 		}
 
-		// update counter display
-		numDirty.text = "Dirty Clothes: " + numDirtyCloth;
-		numHold.text = "Holding: " + numHolding + "/ 10";
-		
+		if (numDirtyCloth >= 40) {
+			Destroy(this.gameObject);
+			SceneManager.LoadScene ("GameOver");
+
+		}
 	}
 }
