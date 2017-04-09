@@ -15,7 +15,7 @@ TagManager:
   - 
   - 
   - PlayerLayer
-  - 
+  - Bugs
   - 
   - 
   - 
@@ -44,7 +44,7 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 1093696345
-    locked: 0
+    locked: 1
   - name: Foreground
     uniqueID: 1859086223
     locked: 0

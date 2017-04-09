@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Scene0.unity
-=======
-- path: Assets/FridgeClean/Scene/Scene2.unity
->>>>>>> 7f39cb5d19dfa46c6e43c0bbdb76da4d32208892
+- path: Assets/SceneCockroach/cockroachGame.unity
   isLoaded: 1
   isActive: 1

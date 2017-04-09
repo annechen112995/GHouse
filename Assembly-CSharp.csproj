@@ -57,6 +57,10 @@
      <Compile Include="Assets\FridgePurge\Script\FridgePurge_Splat.cs" />
      <Compile Include="Assets\Menu\Script\Menu.cs" />
      <Compile Include="Assets\StartGame\Script\ClickStart.cs" />
+     <Compile Include="Assets\liveScript.cs" />
+     <Compile Include="Assets\managerScript.cs" />
+     <Compile Include="Assets\roachScript.cs" />
+     <Compile Include="Assets\scoreScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
