@@ -7,9 +7,9 @@ public class FridgeClean_Player : MonoBehaviour
 	public GUISkin skin;	//GUI Skin
 	public int score;		//Score
 	public int lives = 3;		//Lives
-	public int count = 6;
+	public int count = 0;
 
-	public GameObject splat;
+	//public GameObject splat;
 
 	private Vector3 pos;	//Position
 	private bool dead = false;		//If we are dead
@@ -18,7 +18,7 @@ public class FridgeClean_Player : MonoBehaviour
 
 	void Start ()
 	{
-		//Set screen orientation to landscape
+		//Set screen orientation to portrait
 		Screen.orientation = ScreenOrientation.Portrait;
 		//Set sleep timeout to never
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
@@ -28,18 +28,22 @@ public class FridgeClean_Player : MonoBehaviour
 	void Update ()
 	{
 		WaitForHit();
-		//If dead
-		if (dead)
-		{
-			return;
+		if (count >= 10) {
+			Dies ();
+			count = 0;
 		}
-		//If we have 0 lives left
-		if (lives < 1)
-		{			
-			//Kill
-			foodBehav.CancelInvoke();
-			dead = true;
+	}
+
+	//If dead
+	void Dies ()
+	{
+		lives -= 1;
+		if (lives < 1) {
+			foodBehav.CancelInvoke ();
+			PlayerPrefs.SetInt("coins", score + PlayerPrefs.GetInt("coins"));
+			PlayerPrefs.Save();
 		}
+		return;
 	}
 
 	void OnMouseDown()
