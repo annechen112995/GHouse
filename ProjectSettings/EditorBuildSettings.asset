@@ -42,8 +42,11 @@ EditorBuildSettings:
     path: Assets/SampleScenes/Scenes/Particles.unity
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Scene0.unity
+    path: Assets/StartGame/Scene0.unity
     guid: 94797e7c0f2aa4c5294d6f2cdcabd03a
   - enabled: 1
-    path: Assets/Scenes/Scene1.unity
+    path: Assets/SceneAptmt/Scene1.unity
     guid: b52211718db2e4096994c9c58692a778
+  - enabled: 1
+    path: Assets/FridgeClean/Scene/Scene2.unity
+    guid: 912e798f1185347cea854e925586964e

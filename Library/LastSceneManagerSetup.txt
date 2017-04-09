@@ -1,4 +1,12 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Scene0.unity
+=======
+<<<<<<< HEAD
+- path: Assets/FridgeClean/Scene/Scene2.unity
+=======
+- path: Assets/Laundry/Scenes/Laundry_apartment.unity
+>>>>>>> new
+>>>>>>> f9f29c22c076b6a22465f3d25f641371707e5534
   isLoaded: 1
   isActive: 1
