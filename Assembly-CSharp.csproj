@@ -57,50 +57,20 @@
      <Compile Include="Assets\Laundry\Scripts\managerScript.cs" />
      <Compile Include="Assets\Laundry\Scripts\toHallWay.cs" />
      <Compile Include="Assets\Menu\Script\Menu.cs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
      <Compile Include="Assets\SceneAptmt\Scripts\BackButtonAptmt.cs" />
      <Compile Include="Assets\SceneAptmt\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\SceneAptmt\Scripts\LaunchFridgeGame.cs" />
      <Compile Include="Assets\StartGame\Script\BackButtonStart.cs" />
      <Compile Include="Assets\StartGame\Script\ClickStart.cs" />
-<<<<<<< HEAD
      <Compile Include="Assets\liveScript.cs" />
      <Compile Include="Assets\managerScript.cs" />
      <Compile Include="Assets\roachScript.cs" />
      <Compile Include="Assets\scoreScript.cs" />
-=======
-=======
->>>>>>> newbranch
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-     <Compile Include="Assets\StartGame\Script\ClickStart.cs" />
- <Reference Include="UnityEngine.Analytics">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
-=======
->>>>>>> cd9ca1cd9eb0e48f689628677579afebf419f83b
->>>>>>> newbranch
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
-<<<<<<< HEAD
-=======
- <Reference Include="UnityEngine.Analytics">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
-<<<<<<< HEAD
->>>>>>> 1f68e2b078ca113e20347abe0a934b9a38acebc4
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 44a8a66655c5fe449f2c47d8c223d877a7346cf7
->>>>>>> cd9ca1cd9eb0e48f689628677579afebf419f83b
->>>>>>> newbranch
-=======
->>>>>>> f9f29c22c076b6a22465f3d25f641371707e5534
->>>>>>> newbranch
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
@@ -108,11 +78,8 @@
  <Reference Include="nunit.framework">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
