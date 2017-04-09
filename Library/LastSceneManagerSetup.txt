@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Laundry/Scenes/Laundry_hallway.unity
+- path: Assets/Laundry/Scenes/Laundry_laundryRoom.unity
   isLoaded: 1
   isActive: 1
