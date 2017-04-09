@@ -5,6 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -60,3 +61,6 @@ EditorBuildSettings:
     guid: 6075d3bcf4cdf43678d6ba2492885bc9
 >>>>>>> new
 >>>>>>> 0ed5fc83813f69f1d10481a443f94243b43cba50
+=======
+  m_Scenes: []
+>>>>>>> new

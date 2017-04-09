@@ -10,7 +10,9 @@ public class Basket : MonoBehaviour {
 	public Sprite explode;
 
 	int numClothing;
-
+	int currentHold;
+	int currentDirty;
+	
 	// Update is called once per frame
 	void Update () {
 		
@@ -31,6 +33,33 @@ public class Basket : MonoBehaviour {
 		else {
 			this.gameObject.GetComponent<SpriteRenderer>().sprite = explode;
 			return;
+		}
+	}
+
+
+	void OnMouseDown() {
+		
+		currentHold = GameObject.Find("GameManager").GetComponent<managerScript>().numHolding;
+		currentDirty = GameObject.Find("GameManager").GetComponent<managerScript>().numDirtyCloth;
+
+		// if there is room and also dirty cloth
+		if (currentHold < 10 && currentDirty > 0) {
+
+			// maximum possible take
+			int toTake = 10 - currentHold;
+
+			// if there is more room than number of dirty cloth
+			if (toTake > currentDirty) {
+				GameObject.Find("GameManager").GetComponent<managerScript>().numHolding += currentDirty;
+				GameObject.Find("GameManager").GetComponent<managerScript>().numDirtyCloth = 0;
+			}
+
+			// if there is more dirty cloth than room
+			else {
+				GameObject.Find("GameManager").GetComponent<managerScript>().numHolding = 10;
+				GameObject.Find("GameManager").GetComponent<managerScript>().numDirtyCloth -= toTake;
+			}
+
 		}
 	}
 }
