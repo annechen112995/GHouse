@@ -1,33 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/StartGame/Scene0.unity
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 - path: Assets/SceneCockroach/cockroachGame.unity
-=======
-- path: Assets/FridgeClean/Scene/Scene2.unity
->>>>>>> 1f68e2b078ca113e20347abe0a934b9a38acebc4
-=======
-=======
->>>>>>> newbranch
-- path: Assets/Scenes/Scene0.unity
->>>>>>> newbranch
-=======
-- path: Assets/FridgeClean/Scene/Scene2.unity
-=======
-- path: Assets/Laundry/Scenes/Laundry_apartment.unity
->>>>>>> new
->>>>>>> f9f29c22c076b6a22465f3d25f641371707e5534
-<<<<<<< HEAD
->>>>>>> 9c8ec2ac31aa429dcdbab9b1a4df8358e1401eed
-=======
-=======
-- path: Assets/Laundry/Scenes/Laundry_hallway.unity
->>>>>>> new
->>>>>>> 606bf6dcb430e65faa5849263b2d3ef6720e78b4
   isLoaded: 1
   isActive: 1

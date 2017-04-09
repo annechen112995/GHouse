@@ -8,13 +8,13 @@ public class cockroachManagerScript : MonoBehaviour {
 	public int lives = 3;
 	public int score = 0;
 	public int spawnRate = 1;
-	public float currSpeed = 0.025f;
+	public float currSpeed = 0.05f;
 	public GameObject roach;
 	public float radius = 8f;
 	private float spawnTime = 2f;
-	private float spawnFasterTime = 30f;
-	private float speedUpTime = 50f;
-	private float speedUpFactor = 1.05f;
+	private float spawnFasterTime = 20f;
+	private float speedUpTime = 30f;
+	private float speedUpFactor = 1.09f;
 
 	// Use this for initialization
 	void Start () {
