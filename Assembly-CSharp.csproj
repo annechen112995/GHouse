@@ -64,14 +64,20 @@
      <Compile Include="Assets\StartGame\Script\BackButtonStart.cs" />
      <Compile Include="Assets\StartGame\Script\ClickStart.cs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
      <Compile Include="Assets\StartGame\Script\GameControl.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> 606bf6dcb430e65faa5849263b2d3ef6720e78b4
      <Compile Include="Assets\cockroachManagerScript.cs" />
      <Compile Include="Assets\liveScript.cs" />
      <Compile Include="Assets\roachScript.cs" />
      <Compile Include="Assets\scoreScript.cs" />
+=======
+>>>>>>> new
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
