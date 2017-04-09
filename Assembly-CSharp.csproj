@@ -48,8 +48,6 @@
   <ItemGroup>
      <Compile Include="Assets\FridgeClean\Script\BackButtonFromFridge.cs" />
      <Compile Include="Assets\FridgeClean\Script\FoodBehaviourScript.cs" />
-     <Compile Include="Assets\FridgeClean\Script\FridgeClean_Apple.cs" />
-     <Compile Include="Assets\FridgeClean\Script\FridgeClean_Core.cs" />
      <Compile Include="Assets\FridgeClean\Script\FridgeClean_Player.cs" />
      <Compile Include="Assets\Laundry\ChangeDisplay.cs" />
      <Compile Include="Assets\Laundry\Scripts\BackButtonFromLaundry.cs" />

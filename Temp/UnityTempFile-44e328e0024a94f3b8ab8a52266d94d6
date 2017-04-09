@@ -90,8 +90,6 @@
 -define:UNITY_HAS_GOOGLEVR
 'Assets/FridgeClean/Script/BackButtonFromFridge.cs'
 'Assets/FridgeClean/Script/FoodBehaviourScript.cs'
-'Assets/FridgeClean/Script/FridgeClean_Apple.cs'
-'Assets/FridgeClean/Script/FridgeClean_Core.cs'
 'Assets/FridgeClean/Script/FridgeClean_Player.cs'
 'Assets/Laundry/ChangeDisplay.cs'
 'Assets/Laundry/Scripts/BackButtonFromLaundry.cs'
@@ -113,6 +111,7 @@
 'Assets/liveScript.cs'
 'Assets/roachScript.cs'
 'Assets/scoreScript.cs'
+'Assets/testingApple.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Xml.Linq.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/UnityScript.dll'

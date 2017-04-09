@@ -7,6 +7,8 @@ public class FridgeClean_Player : MonoBehaviour
 	public int score;		//Score
 	public int lives = 3;		//Lives
 
+	public GameObject splat;
+
 	private Vector3 pos;	//Position
 	private bool dead = false;		//If we are dead
 
@@ -38,66 +40,37 @@ public class FridgeClean_Player : MonoBehaviour
 			//Set collider to false
 			//GetComponent<Collider>().enabled = false;
 		}
-
-		//If the game is running on a android device
-		if (Application.platform == RuntimePlatform.Android)
-		{
-			//If we are hitting the screen
-			if (Input.touchCount == 1)
-			{
-				//Find screen touch position
-				pos = Camera.main.ScreenToWorldPoint(new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, 1));
-				//Set position
-				transform.position = new Vector3(pos.x,pos.y,0);
-				//Set collider to true
-				//GetComponent<Collider>().enabled = true;
-				return;
-			}
-			//Set collider to false
-			//GetComponent<Collider>().enabled = false;
-		}
-		//If the game is not running on a android device
-		else
-		{
-			//Find mouse position
-			pos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
-			//Set position
-			transform.position = new Vector3(pos.x,pos.y,0);
-		}
+			
 	}
 
 	void OnMouseDown()
 	{
-		Debug.Log ("we hit something 0");
-		GameObject food = this.gameObject;
+		Object.Destroy (this.gameObject);
 		//If we hits an apple core
-		if (food.tag == "Untagged")
+		if (this.gameObject.tag == "Untagged")
 		{
-			Debug.Log ("we hit something");
-			//Run hit function
-			//food.GetComponent<FridgeClean_Core>().Hit();
-			Object.Destroy (food);
+			Instantiate(splat,new Vector3(transform.position.x,transform.position.y,1),Quaternion.identity);
+			//Object.Destroy (this.gameObject);
 			//Add score
 			score += 1;
 		}
 		//If we hits an apple
-		else if (food.tag == "Respawn")
+		else if (this.gameObject.tag == "Respawn")
 		{
-			Debug.Log ("we hit something 2");
-			//Run hit function
-			//food.GetComponent<FridgeClean_Apple>().Hit();
+			//Removes a life
+			lives--;
 		}
 	}
 
 	// Give the player a chance to click the food.
-	private IEnumerator WaitForHit()
+	IEnumerator WaitForHit()
 	{
 		float time = 0.0f;
 
 		while(Input.touchCount != 1 && time < timeLimit)
 		{
 			time += Time.deltaTime;
-			yield return time;
+			yield return null;
 		}
 	}
 
