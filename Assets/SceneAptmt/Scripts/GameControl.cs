@@ -23,8 +23,8 @@ public class GameControl : MonoBehaviour {
 			if (!aTexture) {
 				return;
 			}
-			GUI.DrawTexture(new Rect(20, 20, 200, 50), aTexture, ScaleMode.ScaleToFit, true, 10.0F);
-			GUI.Label (new Rect(30, 20, 200, 50), numCoins.ToString(), guiStyle);
+			GUI.DrawTexture(new Rect(0, 15, 70, 70), aTexture, ScaleMode.ScaleToFit);
+			GUI.Label (new Rect(50, 18, 200, 50), numCoins.ToString(), guiStyle);
 		}
 	}
 

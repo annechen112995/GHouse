@@ -4,19 +4,27 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class managerScript : MonoBehaviour {
-	public int numDirtyCloth;
-	public int numHolding;
-
-	public Text numDirty;
-	public Text numHold;
+	public int numDirtyCloth = 10;  // number of dirty cloth in basket
+	public int numHolding = 0; // total number of cloth on hand
+	public int numToWash = 0; // number of cloth waiting for washer
+	public int numToDry = 0; // number of cloth waiting for dryer
+	public int coins = 0; // coin
 
 	float timer = 1f;
 	float delay = 1f;
 
-	// Use this for initialization
+
+	static bool created = false;
+
+	
 	void Start () {
-		numDirtyCloth = 10;
-		numHolding = 0;
+		if (!created) {
+			DontDestroyOnLoad(this.gameObject);
+			created = true;
+		}
+		else {
+			Destroy(this.gameObject);
+		}
 	}
 	
 	// Update is called once per frame
@@ -29,10 +37,5 @@ public class managerScript : MonoBehaviour {
 			numDirtyCloth += 1;
 			timer = delay;
 		}
-
-		// update counter display
-		numDirty.text = "Dirty Clothes: " + numDirtyCloth;
-		numHold.text = "Holding: " + numHolding + "/ 10";
-		
 	}
 }

@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 20149865}
   - component: {fileID: 20149864}
   - component: {fileID: 20149863}
+  - component: {fileID: 20149868}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -197,6 +198,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &20149868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 20149862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e43881085cec4366953469c806527e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &667018419 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1815362933946912, guid: b836c5cbadd9d454e965ec3c93d768e2,
@@ -213,9 +225,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efcc3f3be225c422390cb021d2682d34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foodBehav: {fileID: 0}
   skin: {fileID: 0}
   score: 0
   lives: 3
+  count: 6
   splat: {fileID: 0}
 --- !u!1 &1174278475
 GameObject:
@@ -397,9 +411,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efcc3f3be225c422390cb021d2682d34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foodBehav: {fileID: 0}
   skin: {fileID: 0}
   score: 0
   lives: 3
+  count: 6
   splat: {fileID: 0}
 --- !u!212 &1669980653
 SpriteRenderer:
