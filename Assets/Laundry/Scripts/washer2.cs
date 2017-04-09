@@ -29,8 +29,8 @@ public class washer2 : MonoBehaviour {
 
 				else {
 					GameObject.Find("washerManager").GetComponent<washerScript>().hold2 = toWash;
-					GameObject.Find("GameManager").GetComponent<managerScript>().numToWash -= hold;
-					GameObject.Find("GameManager").GetComponent<managerScript>().numHolding -= hold;
+					GameObject.Find("GameManager").GetComponent<managerScript>().numToWash -= toWash;
+					GameObject.Find("GameManager").GetComponent<managerScript>().numHolding -= toWash;
 					GameObject.Find("washerManager").GetComponent<washerScript>().in_use2 = true;
 					GameObject.Find("washerManager").GetComponent<washerScript>().done2 = false;
 					GameObject.Find("washerManager").GetComponent<washerScript>().timeLeft2 = delayTime;
