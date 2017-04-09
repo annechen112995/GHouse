@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 155db29bb4fa04330bad1c1aee544049
 folderAsset: yes
 timeCreated: 1491695281
+=======
+guid: a39880e150c594352a2b1aaf8923418b
+folderAsset: yes
+timeCreated: 1491455209
+>>>>>>> newbranch
 licenseType: Free
 DefaultImporter:
   userData: 
