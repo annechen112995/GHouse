@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/CatScene/CatRainGame.unity
+=======
+- path: Assets/SceneCockroach/cockroachGame.unity
+>>>>>>> newbranch
   isLoaded: 1
   isActive: 1
