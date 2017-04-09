@@ -202,6 +202,21 @@ GameObject:
   m_PrefabParentObject: {fileID: 1815362933946912, guid: b836c5cbadd9d454e965ec3c93d768e2,
     type: 2}
   m_PrefabInternal: {fileID: 1851705257}
+--- !u!114 &667018423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 667018419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efcc3f3be225c422390cb021d2682d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skin: {fileID: 0}
+  score: 0
+  lives: 3
+  splat: {fileID: 0}
 --- !u!1 &1174278475
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,9 +377,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1669980654}
   - component: {fileID: 1669980653}
-  - component: {fileID: 1669980652}
-  - component: {fileID: 1669980655}
   - component: {fileID: 1669980656}
+  - component: {fileID: 1669980652}
   m_Layer: 0
   m_Name: AppleCore
   m_TagString: Untagged
@@ -372,26 +386,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!50 &1669980652
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!114 &1669980652
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1669980651}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efcc3f3be225c422390cb021d2682d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skin: {fileID: 0}
+  score: 0
+  lives: 3
+  splat: {fileID: 0}
 --- !u!212 &1669980653
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -445,22 +454,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1669980655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1669980651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3eff2c0aa1d2e4ac3a2132c2f1483721, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnTime: 2
-  Apple: {fileID: 667018419}
-  AppleCore: {fileID: 1669980651}
-  count: 0
-  spawned: 0
 --- !u!61 &1669980656
 BoxCollider2D:
   m_ObjectHideFlags: 0

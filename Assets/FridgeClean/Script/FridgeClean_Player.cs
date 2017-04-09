@@ -3,9 +3,11 @@ using System.Collections;
 
 public class FridgeClean_Player : MonoBehaviour
 {
+	public FoodBehaviourScript foodBehav;
 	public GUISkin skin;	//GUI Skin
 	public int score;		//Score
 	public int lives = 3;		//Lives
+	public int count = 6;
 
 	public GameObject splat;
 
@@ -20,6 +22,8 @@ public class FridgeClean_Player : MonoBehaviour
 		Screen.orientation = ScreenOrientation.Portrait;
 		//Set sleep timeout to never
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
+		foodBehav = this.gameObject.GetComponent<FoodBehaviourScript>();
+		foodBehav.enabled = false;
 	}
 
 	void Update ()
@@ -28,8 +32,6 @@ public class FridgeClean_Player : MonoBehaviour
 		//If dead
 		if (dead)
 		{
-			//Set collider to false
-			//GetComponent<Collider>().enabled = false;
 			return;
 		}
 		//If we have 0 lives left
@@ -37,9 +39,12 @@ public class FridgeClean_Player : MonoBehaviour
 		{			
 			//Kill
 			dead = true;
-			//Set collider to false
-			//GetComponent<Collider>().enabled = false;
 		}
+		while (count <= 0) {
+			foodBehav.enabled = true;
+			count += 6;
+		} 
+		foodBehav.enabled = false;
 			
 	}
 
@@ -50,7 +55,6 @@ public class FridgeClean_Player : MonoBehaviour
 		if (this.gameObject.tag == "Untagged")
 		{
 			Instantiate(splat,new Vector3(transform.position.x,transform.position.y,1),Quaternion.identity);
-			//Object.Destroy (this.gameObject);
 			//Add score
 			score += 1;
 		}
@@ -60,6 +64,7 @@ public class FridgeClean_Player : MonoBehaviour
 			//Removes a life
 			lives--;
 		}
+		count--;
 	}
 
 	// Give the player a chance to click the food.
