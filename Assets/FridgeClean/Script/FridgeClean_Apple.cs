@@ -20,6 +20,7 @@ public class FridgeClean_Apple : MonoBehaviour
 
 	public void Hit()
 	{
+		
 		//Set player lives to 0
 		player.GetComponent<FridgeClean_Player>().lives--;
 	}
