@@ -1,11 +1,11 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apartment", "Assembly-CSharp-firstpass.csproj", "{3CBC3475-B424-6643-ACD3-8FB30A9AC82B}"
+# Visual Studio 2008
+
+Project("{CD2158F0-23FF-0FF2-78DF-92A54A26B131}") = "apartment", "Assembly-CSharp-firstpass.csproj", "{3CBC3475-B424-6643-ACD3-8FB30A9AC82B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apartment", "Assembly-CSharp.csproj", "{64BA89F4-3398-72C5-82DE-419E1C36E01F}"
+Project("{CD2158F0-23FF-0FF2-78DF-92A54A26B131}") = "apartment", "Assembly-CSharp.csproj", "{64BA89F4-3398-72C5-82DE-419E1C36E01F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apartment", "Assembly-CSharp-Editor-firstpass.csproj", "{90CBFC3A-2CF0-5A5A-B5ED-6DCC1A307721}"
+Project("{CD2158F0-23FF-0FF2-78DF-92A54A26B131}") = "apartment", "Assembly-CSharp-Editor-firstpass.csproj", "{90CBFC3A-2CF0-5A5A-B5ED-6DCC1A307721}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
