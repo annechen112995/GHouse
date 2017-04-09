@@ -31,11 +31,15 @@ MonoBehaviour:
   controlID: 8212
 =======
     height: 702
-  m_MinSize: {x: 679, y: 471}
-  m_MaxSize: {x: 14000, y: 14021}
+  m_MinSize: {x: 681, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 8559
 >>>>>>> 1f68e2b078ca113e20347abe0a934b9a38acebc4
+=======
+  controlID: 69
+>>>>>>> f9f29c22c076b6a22465f3d25f641371707e5534
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,11 +177,15 @@ MonoBehaviour:
 =======
     width: 1003
     height: 702
-  m_MinSize: {x: 404, y: 471}
-  m_MaxSize: {x: 10000, y: 14021}
+  m_MinSize: {x: 404, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 8560
 >>>>>>> 1f68e2b078ca113e20347abe0a934b9a38acebc4
+=======
+  controlID: 70
+>>>>>>> f9f29c22c076b6a22465f3d25f641371707e5534
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,8 +217,12 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 8561
 >>>>>>> 1f68e2b078ca113e20347abe0a934b9a38acebc4
+=======
+  controlID: 71
+>>>>>>> f9f29c22c076b6a22465f3d25f641371707e5534
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -280,10 +292,14 @@ MonoBehaviour:
     height: 404
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: bc2f0000
+    m_SelectedIDs: 54060000
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: f061feff528afeff409dfefff4afffff96b0ffff66f9ffffdcfbffff00000000
 >>>>>>> 1f68e2b078ca113e20347abe0a934b9a38acebc4
+=======
+    m_ExpandedIDs: dcfbffff00000000
+>>>>>>> f9f29c22c076b6a22465f3d25f641371707e5534
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -303,10 +319,14 @@ MonoBehaviour:
     m_SearchString: 
   m_ExpandedScenes:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - cockroachGame
 =======
   - Scene1
 >>>>>>> 1f68e2b078ca113e20347abe0a934b9a38acebc4
+=======
+  - Laundry_laundryRoom
+>>>>>>> f9f29c22c076b6a22465f3d25f641371707e5534
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -425,6 +445,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 7.7399487
     speed: 2
     m_Value: 7.7399487
@@ -433,6 +454,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 18.151367
 >>>>>>> 1f68e2b078ca113e20347abe0a934b9a38acebc4
+=======
+    m_Target: 12.578949
+    speed: 2
+    m_Value: 12.578949
+>>>>>>> f9f29c22c076b6a22465f3d25f641371707e5534
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -612,6 +638,7 @@ MonoBehaviour:
     m_SearchArea: 0
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/FridgePurge/Script
   m_ViewMode: 1
   m_StartGridSize: 64
@@ -624,10 +651,18 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Laundry/Scenes
 >>>>>>> 1f68e2b078ca113e20347abe0a934b9a38acebc4
+=======
+    - Assets/Laundry/Scripts
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Laundry/Scripts
+>>>>>>> f9f29c22c076b6a22465f3d25f641371707e5534
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/michellexiao/Desktop/athenahacks/GHouse
   m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 167}
     m_SelectedIDs: a2290000
@@ -639,20 +674,26 @@ MonoBehaviour:
     m_LastClickedID: 10148
     m_ExpandedIDs: 00000000ea24000020250000c0250000f0250000062600000e2700001228000000ca9a3bffffff7f
 >>>>>>> 1f68e2b078ca113e20347abe0a934b9a38acebc4
+=======
+    scrollPos: {x: 0, y: 160.00183}
+    m_SelectedIDs: 70260000
+    m_LastClickedID: 9840
+    m_ExpandedIDs: 00000000e82400001e250000c0250000f025000006260000102700003c28000000ca9a3bffffff7f
+>>>>>>> f9f29c22c076b6a22465f3d25f641371707e5534
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Texture
-      m_OriginalName: Texture
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 9854
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -667,10 +708,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000048290000da290000fc290000622b000000ca9a3bffffff7f
 =======
     m_ExpandedIDs: 00000000ea24000020250000c0250000f0250000062600000e2700001228000000ca9a3bffffff7f
 >>>>>>> 1f68e2b078ca113e20347abe0a934b9a38acebc4
+=======
+    m_ExpandedIDs: 00000000e82400001e250000c0250000f025000006260000102700003c280000
+>>>>>>> f9f29c22c076b6a22465f3d25f641371707e5534
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -696,6 +741,7 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
@@ -703,6 +749,10 @@ MonoBehaviour:
 =======
     m_SelectedInstanceIDs: bc2f0000
     m_LastClickedInstanceID: 12220
+=======
+    m_SelectedInstanceIDs: 54060000
+    m_LastClickedInstanceID: 1620
+>>>>>>> f9f29c22c076b6a22465f3d25f641371707e5534
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 9227000000000000
 >>>>>>> 1f68e2b078ca113e20347abe0a934b9a38acebc4
@@ -802,8 +852,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 702
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
