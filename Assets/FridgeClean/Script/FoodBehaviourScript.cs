@@ -27,8 +27,8 @@ public class FoodBehaviourScript : MonoBehaviour {
 	public void Spawn()
 	{
 		GameObject prefab = Apple;
-		//If random is over 30
-		if (Random.Range(0,100) < 30)
+		//If random is over 50
+		if (Random.Range(0,100) < 50)
 		{
 			//Spawn prefab is apple core
 			prefab = AppleCore;

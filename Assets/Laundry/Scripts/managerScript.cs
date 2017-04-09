@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class managerScript : MonoBehaviour {
 	public int numDirtyCloth;  // number of dirty cloth in basket
