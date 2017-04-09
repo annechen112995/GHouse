@@ -56,6 +56,7 @@
      <Compile Include="Assets\FridgePurge\Script\FridgePurge_SpawnFruit.cs" />
      <Compile Include="Assets\FridgePurge\Script\FridgePurge_Splat.cs" />
      <Compile Include="Assets\Menu\Script\Menu.cs" />
+     <Compile Include="Assets\SceneAptmt\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\StartGame\Script\ClickStart.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
