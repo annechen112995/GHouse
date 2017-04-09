@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scenes.meta
 guid: ec8d756c6af444c5ebd10268acdaee13
 folderAsset: yes
 timeCreated: 1491702601
+=======
+guid: 72ee61868cefd4b2ab1c0eaf5ad779e5
+timeCreated: 1491702800
+>>>>>>> 7f39cb5d19dfa46c6e43c0bbdb76da4d32208892:Assets/Art.meta~HEAD.meta~HEAD.meta
 licenseType: Free
 DefaultImporter:
   userData: 
