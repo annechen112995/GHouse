@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class FridgePurge_Player : MonoBehaviour
@@ -104,7 +105,7 @@ public class FridgePurge_Player : MonoBehaviour
 		if(GUI.Button(new Rect(Screen.width - 120,0,120,40),"Menu"))
 		{
 			//Load Menu scene
-			Application.LoadLevel("Menu");
+			SceneManager.LoadScene("Menu");
 		}
 		//If dead
 		if (dead)
@@ -112,12 +113,12 @@ public class FridgePurge_Player : MonoBehaviour
 			//Play Again Button
 			if(GUI.Button(new Rect(Screen.width / 2 - 90,Screen.height / 2 - 60,180,50),"Play Again"))
 			{
-				Application.LoadLevel("Game 10");
+				SceneManager.LoadScene("Game 10");
 			}
 			//Menu Button
 			if(GUI.Button(new Rect(Screen.width / 2 - 90,Screen.height / 2,180,50),"Menu"))
 			{
-				Application.LoadLevel("Menu");
+				SceneManager.LoadScene("Menu");
 			}
 		}	
 	}
