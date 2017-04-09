@@ -54,11 +54,20 @@
      <Compile Include="Assets\Laundry\ChangeDisplay.cs" />
      <Compile Include="Assets\Laundry\Scripts\BackButtonFromLaundry.cs" />
      <Compile Include="Assets\Laundry\Scripts\Basket.cs" />
+     <Compile Include="Assets\Laundry\Scripts\cameraRoll_laundryRm.cs" />
      <Compile Include="Assets\Laundry\Scripts\cameraScroll.cs" />
+     <Compile Include="Assets\Laundry\Scripts\cameraScroll_hallway.cs" />
+     <Compile Include="Assets\Laundry\Scripts\dryer1.cs" />
+     <Compile Include="Assets\Laundry\Scripts\dryer2.cs" />
+     <Compile Include="Assets\Laundry\Scripts\dryerScript.cs" />
      <Compile Include="Assets\Laundry\Scripts\managerScript.cs" />
      <Compile Include="Assets\Laundry\Scripts\toApartment.cs" />
      <Compile Include="Assets\Laundry\Scripts\toHallWay.cs" />
      <Compile Include="Assets\Laundry\Scripts\toLaundry.cs" />
+     <Compile Include="Assets\Laundry\Scripts\updateUI.cs" />
+     <Compile Include="Assets\Laundry\Scripts\washer1.cs" />
+     <Compile Include="Assets\Laundry\Scripts\washer2.cs" />
+     <Compile Include="Assets\Laundry\Scripts\washerScript.cs" />
      <Compile Include="Assets\Menu\Script\Menu.cs" />
      <Compile Include="Assets\SceneAptmt\Scripts\BackButtonAptmt.cs" />
      <Compile Include="Assets\SceneAptmt\Scripts\CameraFollow.cs" />
@@ -66,44 +75,16 @@
      <Compile Include="Assets\SceneCockroach\BackButtonFromRoach.cs" />
      <Compile Include="Assets\StartGame\Script\BackButtonStart.cs" />
      <Compile Include="Assets\StartGame\Script\ClickStart.cs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
      <Compile Include="Assets\StartGame\Script\GameControl.cs" />
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-     <Compile Include="Assets\StartGame\Script\GameControl.cs" />
- <Reference Include="UnityEngine.Analytics">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
-=======
-=======
-<<<<<<< HEAD
->>>>>>> 606bf6dcb430e65faa5849263b2d3ef6720e78b4
-=======
->>>>>>> new
->>>>>>> 0ed5fc83813f69f1d10481a443f94243b43cba50
-=======
-     <Compile Include="Assets\StartGame\Script\GameControl.cs" />
->>>>>>> new
      <Compile Include="Assets\cockroachManagerScript.cs" />
      <Compile Include="Assets\liveScript.cs" />
      <Compile Include="Assets\roachScript.cs" />
      <Compile Include="Assets\scoreScript.cs" />
-<<<<<<< HEAD
- <Reference Include="UnityEngine.Analytics">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
-=======
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
-<<<<<<< HEAD
->>>>>>> 9c8ec2ac31aa429dcdbab9b1a4df8358e1401eed
->>>>>>> 0ed5fc83813f69f1d10481a443f94243b43cba50
-=======
->>>>>>> new
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
