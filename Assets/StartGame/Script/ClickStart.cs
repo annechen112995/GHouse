@@ -5,6 +5,6 @@ using UnityEngine;
 public class ClickStart : MonoBehaviour {
 
 	public void Click(string levelName) {
-		Application.LoadLevel (levelName);
+		Application.LoadLevel("Scene1");
 	}
 }
