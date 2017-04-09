@@ -73,6 +73,7 @@
      <Compile Include="Assets\SceneAptmt\Scripts\GameControl.cs" />
      <Compile Include="Assets\SceneAptmt\Scripts\LaunchGame.cs" />
      <Compile Include="Assets\SceneCockroach\BackButtonFromRoach.cs" />
+     <Compile Include="Assets\ShopScene\BuyFish.cs" />
      <Compile Include="Assets\StartGame\Script\BackButtonStart.cs" />
      <Compile Include="Assets\StartGame\Script\ClickStart.cs" />
      <Compile Include="Assets\cockroachManagerScript.cs" />
