@@ -62,8 +62,8 @@
      <Compile Include="Assets\SceneAptmt\Scripts\LaunchFridgeGame.cs" />
      <Compile Include="Assets\StartGame\Script\BackButtonStart.cs" />
      <Compile Include="Assets\StartGame\Script\ClickStart.cs" />
+     <Compile Include="Assets\cockroachManagerScript.cs" />
      <Compile Include="Assets\liveScript.cs" />
-     <Compile Include="Assets\managerScript.cs" />
      <Compile Include="Assets\roachScript.cs" />
      <Compile Include="Assets\scoreScript.cs" />
  <Reference Include="UnityEngine.UI">

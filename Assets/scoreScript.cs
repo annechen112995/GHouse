@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class scoreScript : MonoBehaviour {
 	Text currScore;
 	private GameObject gameManager;
-	managerScript manager;
+	cockroachManagerScript manager;
 
 
 	// Use this for initialization
 	void Start () {
 		currScore = GetComponent<UnityEngine.UI.Text>();
 		gameManager = GameObject.Find("GameManager"); 
-		manager = gameManager.GetComponent<managerScript>();
+		manager = gameManager.GetComponent<cockroachManagerScript>();
 		
 	}
 	

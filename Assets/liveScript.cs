@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class liveScript : MonoBehaviour {
 	
 	private GameObject gameManager;
-	managerScript manager;
+	cockroachManagerScript manager;
 	public Sprite heart3;
 	public Sprite heart2;
 	public Sprite heart1;
@@ -18,7 +18,7 @@ public class liveScript : MonoBehaviour {
 	void Start () {
 		heartArray = new Sprite[]{heart0,heart1,heart2,heart3};
 		gameManager = GameObject.Find("GameManager"); 
-		manager = gameManager.GetComponent<managerScript>();
+		manager = gameManager.GetComponent<cockroachManagerScript>();
 	}
 	
 	// Update is called once per frame

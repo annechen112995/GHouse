@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class managerScript : MonoBehaviour {
+
+public class cockroachManagerScript : MonoBehaviour {
 
 	public int lives = 3;
 	public int score = 0;
@@ -22,7 +23,7 @@ public class managerScript : MonoBehaviour {
 		InvokeRepeating ("Spawnfaster", spawnFasterTime,spawnFasterTime);
 		InvokeRepeating ("Spawn", spawnTime, spawnTime);
 	}
-		
+
 
 	void Spawnfaster(){
 		spawnTime /= 1.1f;

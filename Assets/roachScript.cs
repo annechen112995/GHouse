@@ -6,13 +6,13 @@ public class roachScript : MonoBehaviour {
 	private bool startDie = false;
 	public float speed;
 	private GameObject gameManager;
-	managerScript manager;
+	cockroachManagerScript manager;
 
 
 	// Use this for initialization
 	void Start () {
 		gameManager = GameObject.Find("GameManager"); 
-		manager = gameManager.GetComponent<managerScript>();
+		manager = gameManager.GetComponent<cockroachManagerScript>();
 		speed = manager.currSpeed;
 		
 	}
