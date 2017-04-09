@@ -30,8 +30,8 @@ public class dryer1 : MonoBehaviour {
 
 				else {
 					GameObject.Find("dryerManager").GetComponent<dryerScript>().hold1 = toDry;
-					GameObject.Find("GameManager").GetComponent<managerScript>().numToDry -= hold;
-					GameObject.Find("GameManager").GetComponent<managerScript>().numHolding -= hold;
+					GameObject.Find("GameManager").GetComponent<managerScript>().numToDry -= toDry;
+					GameObject.Find("GameManager").GetComponent<managerScript>().numHolding -= toDry;
 					GameObject.Find("dryerManager").GetComponent<dryerScript>().in_use1 = true;
 					GameObject.Find("dryerManager").GetComponent<dryerScript>().done1 = false;
 					GameObject.Find("dryerManager").GetComponent<dryerScript>().timeLeft1 = delayTime;

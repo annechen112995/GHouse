@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class washerScript : MonoBehaviour {
-	public bool in_use1 = false;
-	public bool done1 = false;
-	public int hold1 = 0;
-	public float timeLeft1 = 12f;
+	public bool in_use1;
+	public bool done1;
+	public int hold1;
+	public float timeLeft1;
 
-	public bool in_use2 = false;
-	public bool done2 = false;
-	public int hold2 = 0;
-	public float timeLeft2 = 12f;
+	public bool in_use2;
+	public bool done2;
+	public int hold2;
+	public float timeLeft2;
 
 	static bool created = false;
 
@@ -21,6 +21,15 @@ public class washerScript : MonoBehaviour {
 		if (!created) {
 			DontDestroyOnLoad(this.gameObject);
 			created = true;
+			in_use1 = false;
+			done1 = false;
+			hold1 = 0;
+			timeLeft1 = 12f;
+
+			in_use2 = false;
+			done2 = false;
+			hold2 = 0;
+			timeLeft2 = 12f;
 		}
 		else {
 			Destroy(this.gameObject);

@@ -560,7 +560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88f7de67bc1d4ff4a82dff6ff1e46af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numDirtyCloth: 10
+  numDirtyCloth: 0
   numHolding: 0
   numToWash: 0
   numToDry: 0
