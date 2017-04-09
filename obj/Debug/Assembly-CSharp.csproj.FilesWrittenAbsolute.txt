@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /Users/michellexiao/Desktop/athenahacks/GHouse/Temp/bin/Debug/UnityEngine.dll
 /Users/michellexiao/Desktop/athenahacks/GHouse/Temp/bin/Debug/UnityEditor.dll
 /Users/michellexiao/Desktop/athenahacks/GHouse/Temp/bin/Debug/Mono.Cecil.dll
@@ -20,3 +21,27 @@
 /Users/michellexiao/Desktop/athenahacks/GHouse/Temp/bin/Debug/UnityEngine.Analytics.dll
 /Users/michellexiao/Desktop/athenahacks/GHouse/Temp/bin/Debug/UnityEngine.HoloLens.dll
 /Users/michellexiao/Desktop/athenahacks/GHouse/Temp/bin/Debug/UnityEngine.VR.dll
+=======
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/Westwood/Desktop/GHouse/obj/Debug/Assembly-CSharp.dll
+/Users/Westwood/Desktop/GHouse/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/UnityEngine.dll
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/UnityEditor.dll
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/UnityEngine.Analytics.dll
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/UnityEngine.TestRunner.dll
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/nunit.framework.dll
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/UnityEngine.HoloLens.dll
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/UnityEngine.VR.dll
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/Mono.Cecil.dll
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/Unity.DataContract.dll
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/Westwood/Desktop/GHouse/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+>>>>>>> 1f68e2b078ca113e20347abe0a934b9a38acebc4
