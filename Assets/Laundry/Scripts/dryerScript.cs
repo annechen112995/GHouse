@@ -22,12 +22,12 @@ public class dryerScript : MonoBehaviour {
 			in_use1 = false;
 			done1 = false;
 			hold1 = 0;
-			timeLeft1 = 15f;
+			timeLeft1 = 13f;
 
 			in_use2 = false;
 			done2 = false;
 			hold2 = 0;
-			timeLeft2 = 15f;
+			timeLeft2 = 13f;
 		}
 		else {
 			Destroy(this.gameObject);

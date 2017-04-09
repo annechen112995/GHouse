@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class dryer2 : MonoBehaviour {
 	int maxHold = 12;
-	float delayTime = 15f;
+	float delayTime = 13f;
 
 	public Sprite notUsed;
 	public Sprite inUse;

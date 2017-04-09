@@ -45,8 +45,13 @@ public class managerScript : MonoBehaviour {
 			timer = delay;
 		}
 
+<<<<<<< HEAD
 		if (numDirtyCloth >= 40) {
 			Destroy (this.gameObject);
+=======
+		if (numDirtyCloth >= 50) {
+			Destroy(this.gameObject);
+>>>>>>> new
 			SceneManager.LoadScene ("GameOver");
 		}
 

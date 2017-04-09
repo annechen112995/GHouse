@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class washer2 : MonoBehaviour {
 	int maxHold = 8;
-	float delayTime = 20f;
+	float delayTime = 10f;
 
 	public Sprite notUsed;
 	public Sprite inUse;
