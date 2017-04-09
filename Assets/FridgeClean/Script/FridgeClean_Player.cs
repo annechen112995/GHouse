@@ -5,10 +5,12 @@ public class FridgeClean_Player : MonoBehaviour
 {
 	public GUISkin skin;	//GUI Skin
 	public int score;		//Score
-	public int lives;		//Lives
+	public int lives = 3;		//Lives
 
 	private Vector3 pos;	//Position
-	private bool dead;		//If we are dead
+	private bool dead = false;		//If we are dead
+
+	private float timeLimit = 3.0f;
 
 	void Start ()
 	{
@@ -20,11 +22,12 @@ public class FridgeClean_Player : MonoBehaviour
 
 	void Update ()
 	{
+		WaitForHit();
 		//If dead
 		if (dead)
 		{
 			//Set collider to false
-			GetComponent<Collider>().enabled = false;
+			//GetComponent<Collider>().enabled = false;
 			return;
 		}
 		//If we have 0 lives left
@@ -33,7 +36,7 @@ public class FridgeClean_Player : MonoBehaviour
 			//Kill
 			dead = true;
 			//Set collider to false
-			GetComponent<Collider>().enabled = false;
+			//GetComponent<Collider>().enabled = false;
 		}
 
 		//If the game is running on a android device
@@ -47,11 +50,11 @@ public class FridgeClean_Player : MonoBehaviour
 				//Set position
 				transform.position = new Vector3(pos.x,pos.y,0);
 				//Set collider to true
-				GetComponent<Collider>().enabled = true;
+				//GetComponent<Collider>().enabled = true;
 				return;
 			}
 			//Set collider to false
-			GetComponent<Collider>().enabled = false;
+			//GetComponent<Collider>().enabled = false;
 		}
 		//If the game is not running on a android device
 		else
@@ -63,21 +66,34 @@ public class FridgeClean_Player : MonoBehaviour
 		}
 	}
 
-	void OnTriggerEnter(Collider other)
+	void OnMouseDown()
 	{
 		//If we hits an apple core
-		if (other.tag == "Untagged")
+		if (this.tag == "Untagged")
 		{
 			//Run hit function
-			other.GetComponent<FridgeClean_Core>().Hit();
+			this.GetComponent<FridgeClean_Core>().Hit();
+			Object.Destroy (this.gameObject);
 			//Add score
 			score += 1;
 		}
 		//If we hits an apple
-		else if (other.tag == "Respawn")
+		else if (this.tag == "Respawn")
 		{
 			//Run hit function
-			other.GetComponent<FridgeClean_Apple>().Hit();
+			this.GetComponent<FridgeClean_Apple>().Hit();
+		}
+	}
+
+	// Give the player a chance to click the food.
+	private IEnumerator WaitForHit()
+	{
+		float time = 0.0f;
+
+		while(Input.touchCount != 1 && time < timeLimit)
+		{
+			time += Time.deltaTime;
+			yield return time;
 		}
 	}
 
@@ -107,12 +123,12 @@ public class FridgeClean_Player : MonoBehaviour
 			//Application.LoadLevel("Menu");
 		}
 		//If dead
-		if (dead)
+		if (dead == true)
 		{
 			//Play Again Button
 			if(GUI.Button(new Rect(Screen.width / 2 - 90,Screen.height / 2 - 60,180,50),"Play Again"))
 			{
-				Application.LoadLevel("FridgeClean");
+				//SceneManager.LoadScene("FridgeClean");
 			}
 			//Menu Button
 			if(GUI.Button(new Rect(Screen.width / 2 - 90,Screen.height / 2,180,50),"Menu"))

@@ -32,7 +32,7 @@ public class FoodBehaviourScript : MonoBehaviour {
 			prefab = AppleCore;
 		}
 
-		if (count < 1 && spawned == false) {
+		if (count < 2 && spawned == false) {
 			count += 1;
 			spawned = true;
 			//Spawn prefab add random position
