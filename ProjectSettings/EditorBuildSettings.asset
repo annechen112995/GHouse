@@ -4,6 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
   m_Scenes:
   - enabled: 0
     path: Assets/SampleScenes/Scenes/2dCharacter.unity
@@ -53,3 +54,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Laundry/Scenes/Laundry_apartment.unity
     guid: 0e4c7849c98a74447baf59792a50db06
+=======
+  m_Scenes: []
+>>>>>>> 9c8ec2ac31aa429dcdbab9b1a4df8358e1401eed
