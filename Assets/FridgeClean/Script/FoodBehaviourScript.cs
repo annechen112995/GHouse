@@ -32,6 +32,16 @@ public class FoodBehaviourScript : MonoBehaviour {
 		}
 		//Spawn prefab add randomc position
 		GameObject go = Instantiate(prefab,new Vector3(Random.Range(minX,maxX + 1),transform.position.y,0),Quaternion.Euler(0,0,Random.Range(-50, 50))) as GameObject;
+		//If x position is over 0 go left
+		if (go.transform.position.x > 0)
+		{
+			go.GetComponent<Rigidbody>().AddForce(new Vector3(-leftRightForce,upForce,0));
+		}
+		//Else go right
+		else
+		{
+			go.GetComponent<Rigidbody>().AddForce(new Vector3(leftRightForce,upForce,0));
+		}
 
 		//Start the spawn again
 		StartCoroutine("Spawn");
