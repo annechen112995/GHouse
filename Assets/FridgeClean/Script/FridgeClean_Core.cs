@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FridgeClean_Apple : MonoBehaviour
+public class FridgeClean_Core : MonoBehaviour
 {
+	public GameObject splat;	//The splat prefab of the fruit
+
 	private bool canBeDead;		//If we can destroy the object
 	private Vector3 screen;		//Position on the screen
 	private GameObject player;	//The player
@@ -12,20 +14,31 @@ public class FridgeClean_Apple : MonoBehaviour
 
 	void Start ()
 	{
-		//Find the player
-		player = GameObject.Find("Player");
+		//If we tag is Untagged
+		if (gameObject.tag == "Untagged")
+		{
+			//Find player
+			player = GameObject.Find("Player");
+		}
 	}
 
 	void Update ()
 	{
 		//Set screen position
 		screen = Camera.main.WorldToScreenPoint(transform.position);
-
-		WaitForHit();
-
+		if (canBeDead && time < timeLimit) 
+		{
+			WaitForHit();
+		}
 		//If we can die and are not on the screen
 		if (canBeDead && time >= timeLimit)
 		{
+			//If our tag is a core
+			if (gameObject.tag == "Untagged")
+			{
+				//Remove 1 lives from the player
+				player.GetComponent<FridgeClean_Player>().lives--;
+			}
 			//Destroy
 			Destroy(gameObject);
 		}
@@ -35,7 +48,6 @@ public class FridgeClean_Apple : MonoBehaviour
 			//We can die
 			canBeDead = true;
 		}
-
 	}
 
 	// Give the player a chance to click the food.
@@ -47,13 +59,16 @@ public class FridgeClean_Apple : MonoBehaviour
 		{
 			time += Time.deltaTime;
 			yield return time;
-		}	
+		}
 	}
 
 	public void Hit()
 	{
-		//Set player lives to 0
-		player.GetComponent<FridgeClean_Player>().lives = 0;
+		GameObject go = null;
+	
+		//Spawn splat prefab of the core
+		Instantiate(splat,new Vector3(transform.position.x,transform.position.y,1),Quaternion.identity);
+
 		//Destroy
 		Destroy(gameObject);
 	}

@@ -49,13 +49,8 @@
      <Compile Include="Assets\FridgeClean\Script\BackButtonFromFridge.cs" />
      <Compile Include="Assets\FridgeClean\Script\FoodBehaviourScript.cs" />
      <Compile Include="Assets\FridgeClean\Script\FridgeClean_Apple.cs" />
-     <Compile Include="Assets\FridgeClean\Script\FridgeClean_AppleCore.cs" />
-     <Compile Include="Assets\FridgeClean\Script\FridgeClean_Purge.cs" />
-     <Compile Include="Assets\FridgePurge\Script\FridgePurge_Bomb.cs" />
-     <Compile Include="Assets\FridgePurge\Script\FridgePurge_Fruit.cs" />
-     <Compile Include="Assets\FridgePurge\Script\FridgePurge_Player.cs" />
-     <Compile Include="Assets\FridgePurge\Script\FridgePurge_SpawnFruit.cs" />
-     <Compile Include="Assets\FridgePurge\Script\FridgePurge_Splat.cs" />
+     <Compile Include="Assets\FridgeClean\Script\FridgeClean_Core.cs" />
+     <Compile Include="Assets\FridgeClean\Script\FridgeClean_Player.cs" />
      <Compile Include="Assets\Laundry\ChangeDisplay.cs" />
      <Compile Include="Assets\Laundry\Scripts\Basket.cs" />
      <Compile Include="Assets\Laundry\Scripts\managerScript.cs" />
