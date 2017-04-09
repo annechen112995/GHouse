@@ -1,9 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FridgePurge/Script/FridgePurge_Bomb.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/FridgeClean/Script/FoodBehaviourScript.cs">
     <Files>
-      <File FileName="Assets/FridgeClean/Script/FoodBehaviourScript.cs" Line="26" Column="24" />
-      <File FileName="Assets/FridgePurge/Script/FridgePurge_SpawnFruit.cs" Line="8" Column="27" />
+      <File FileName="Assets/FridgeClean/Script/FoodBehaviourScript.cs" Line="30" Column="16" />
+      <File FileName="Assets/FridgePurge/Script/FridgePurge_SpawnFruit.cs" Line="31" Column="4" />
       <File FileName="Assets/FridgePurge/Script/FridgePurge_Bomb.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
