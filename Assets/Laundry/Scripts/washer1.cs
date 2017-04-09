@@ -6,6 +6,10 @@ public class washer1 : MonoBehaviour {
 	int maxHold = 8;
 	float delayTime = 12f;
 
+	public Sprite notUsed;
+	public Sprite inUse;
+	public Sprite done;
+
 	// If clicked
 	void OnMouseDown() {
 		int hold = GameObject.Find("washerManager").GetComponent<washerScript>().hold1;
@@ -24,6 +28,7 @@ public class washer1 : MonoBehaviour {
 				GameObject.Find("washerManager").GetComponent<washerScript>().in_use1 = true;
 				GameObject.Find("washerManager").GetComponent<washerScript>().done1 = false;					
 				GameObject.Find("washerManager").GetComponent<washerScript>().timeLeft1 = delayTime;
+				this.gameObject.GetComponent<SpriteRenderer>().sprite = inUse;
 				return;
 				}
 
@@ -34,6 +39,7 @@ public class washer1 : MonoBehaviour {
 				GameObject.Find("washerManager").GetComponent<washerScript>().in_use1 = true;
 				GameObject.Find("washerManager").GetComponent<washerScript>().done1 = false;
 				GameObject.Find("washerManager").GetComponent<washerScript>().timeLeft1 = delayTime;
+				this.gameObject.GetComponent<SpriteRenderer>().sprite = inUse;
 				return;
 			}
 			
@@ -56,6 +62,7 @@ public class washer1 : MonoBehaviour {
 				GameObject.Find("washerManager").GetComponent<washerScript>().hold1 -= hold;
 				GameObject.Find("washerManager").GetComponent<washerScript>().in_use1 = false;
 				GameObject.Find("washerManager").GetComponent<washerScript>().done1 = false;
+				this.gameObject.GetComponent<SpriteRenderer>().sprite = notUsed;
 				return;
 			}
 		}

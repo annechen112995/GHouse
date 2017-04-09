@@ -43,6 +43,8 @@ public class washerScript : MonoBehaviour {
         if(timeLeft1 < 0)
         {
              done1 = true;
+			 GameObject.Find("washer1").gameObject.GetComponent<SpriteRenderer>().sprite = 
+			  GameObject.Find("washer1").gameObject.GetComponent<washer1>().done;
         }
 
 		// Counting wash cycle
@@ -50,6 +52,8 @@ public class washerScript : MonoBehaviour {
         if(timeLeft2 < 0)
         {
              done2 = true;
+			 GameObject.Find("washer2").gameObject.GetComponent<SpriteRenderer>().sprite = 
+			  GameObject.Find("washer2").gameObject.GetComponent<washer2>().done;
         }
 		
 	}

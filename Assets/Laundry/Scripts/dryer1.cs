@@ -6,6 +6,24 @@ public class dryer1 : MonoBehaviour {
 	int maxHold = 12;
 	float delayTime = 15f;
 
+	public Sprite notUsed;
+	public Sprite inUse;
+	public Sprite done;
+
+
+	void Update() {
+		if (GameObject.Find("dryerManager").GetComponent<dryerScript>().in_use1 &&
+			GameObject.Find("dryerManager").GetComponent<dryerScript>().done1) {
+			this.gameObject.GetComponent<SpriteRenderer>().sprite = done;
+		}
+		else if (GameObject.Find("dryerManager").GetComponent<dryerScript>().in_use1) {
+			this.gameObject.GetComponent<SpriteRenderer>().sprite = inUse;
+		}
+		else {
+			this.gameObject.GetComponent<SpriteRenderer>().sprite = notUsed;
+		}
+	}
+
 
 	// If clicked
 	void OnMouseDown() {

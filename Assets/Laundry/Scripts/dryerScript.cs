@@ -41,6 +41,8 @@ public class dryerScript : MonoBehaviour {
         if(timeLeft1 < 0)
         {
              done1 = true;
+			 GameObject.Find("dryer1").gameObject.GetComponent<SpriteRenderer>().sprite = 
+			  GameObject.Find("dryer1").gameObject.GetComponent<dryer1>().done;
         }
 
 		// Counting wash cycle
@@ -48,6 +50,8 @@ public class dryerScript : MonoBehaviour {
         if(timeLeft2 < 0)
         {
              done2 = true;
+			 GameObject.Find("dryer2").gameObject.GetComponent<SpriteRenderer>().sprite = 
+			  GameObject.Find("dryer2").gameObject.GetComponent<dryer2>().done;
         }
 		
 	}
