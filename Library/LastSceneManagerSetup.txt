@@ -1,8 +1,17 @@
 sceneSetups:
 <<<<<<< HEAD
+- path: Assets/ShopScene/ShopScene.unity
+=======
+<<<<<<< HEAD
 - path: Assets/CatScene/CatRainGame.unity
 =======
+<<<<<<< HEAD
 - path: Assets/SceneCockroach/cockroachGame.unity
 >>>>>>> newbranch
+=======
+- path: Assets/Laundry/Scenes/Laundry_apartment.unity
+>>>>>>> f28f47aee28c19188d1fc9d47270bb7bc78b4346
+>>>>>>> 3fa36575090f7513e8615c1d5e99bb2672b81a4f
+>>>>>>> 31999901ffe6ed32979418d34ca1d1e45077f00d
   isLoaded: 1
   isActive: 1
