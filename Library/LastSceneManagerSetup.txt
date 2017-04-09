@@ -1,5 +1,6 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/StartGame/Scene0.unity
 =======
 <<<<<<< HEAD
@@ -29,5 +30,8 @@ sceneSetups:
 - path: Assets/Laundry/Scenes/Laundry_hallway.unity
 >>>>>>> new
 >>>>>>> 606bf6dcb430e65faa5849263b2d3ef6720e78b4
+=======
+- path: Assets/Laundry/Scenes/Laundry_laundryRoom.unity
+>>>>>>> new
   isLoaded: 1
   isActive: 1

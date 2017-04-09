@@ -1,6 +1,7 @@
 Base path: /Applications/Unity/Unity.app/Contents
 Cmd: initializeCompiler
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -16,3 +17,7 @@ Cmd: compileSnippet
 >>>>>>> f9f29c22c076b6a22465f3d25f641371707e5534
 >>>>>>> newbranch
 >>>>>>> 9c8ec2ac31aa429dcdbab9b1a4df8358e1401eed
+=======
+
+Quitting shader compiler process
+>>>>>>> new
