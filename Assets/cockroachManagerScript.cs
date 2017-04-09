@@ -18,7 +18,7 @@ public class cockroachManagerScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		score = 0;
 		InvokeRepeating ("SpeedUp", speedUpTime, speedUpTime);
 		InvokeRepeating ("Spawnfaster", spawnFasterTime,spawnFasterTime);
 		InvokeRepeating ("Spawn", spawnTime, spawnTime);
@@ -37,9 +37,7 @@ public class cockroachManagerScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (lives < 1) {
-			CancelInvoke ();
-		}
+
 	}
 	void Spawn() {
 		for (int i = 0; i < spawnRate; i++){
