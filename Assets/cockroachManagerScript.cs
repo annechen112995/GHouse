@@ -12,7 +12,7 @@ public class cockroachManagerScript : MonoBehaviour {
 	public GameObject roach;
 	public float radius = 8f;
 	private float spawnTime = 2f;
-	private float spawnFasterTime = 20f;
+	private float spawnFasterTime = 15f;
 	private float speedUpTime = 30f;
 	private float speedUpFactor = 1.09f;
 
