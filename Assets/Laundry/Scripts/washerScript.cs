@@ -24,12 +24,12 @@ public class washerScript : MonoBehaviour {
 			in_use1 = false;
 			done1 = false;
 			hold1 = 0;
-			timeLeft1 = 12f;
+			timeLeft1 = 10f;
 
 			in_use2 = false;
 			done2 = false;
 			hold2 = 0;
-			timeLeft2 = 12f;
+			timeLeft2 = 10f;
 		}
 		else {
 			Destroy(this.gameObject);

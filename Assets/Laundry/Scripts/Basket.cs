@@ -26,7 +26,7 @@ public class Basket : MonoBehaviour {
 			this.gameObject.GetComponent<SpriteRenderer>().sprite = semiFull;
 			return;
 		}
-		if (numClothing < 25) {
+		if (numClothing < 40) {
 			this.gameObject.GetComponent<SpriteRenderer>().sprite = full;
 			return;
 		}
