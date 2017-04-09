@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using UnityEngine.SceneManagement;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -45,7 +46,7 @@ public class managerScript : MonoBehaviour {
 			timer = delay;
 		}
 
-		if (numDirtyCloth >= 80) {
+		if (numDirtyCloth >= 40) {
 			Destroy(this.gameObject);
 			SceneManager.LoadScene ("GameOver");
 

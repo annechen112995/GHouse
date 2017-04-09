@@ -1,4 +1,8 @@
 sceneSetups:
-- path: Assets/Laundry/Scenes/GameOver.unity
+<<<<<<< HEAD
+- path: Assets/CatScene/CatRainGame.unity
+=======
+- path: Assets/Laundry/Scenes/Laundry_apartment.unity
+>>>>>>> f28f47aee28c19188d1fc9d47270bb7bc78b4346
   isLoaded: 1
   isActive: 1
