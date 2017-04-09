@@ -1,10 +1,15 @@
-﻿using System.Collections;
+﻿using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClickStart : MonoBehaviour {
 
 	public void Click(string levelName) {
-		Application.LoadLevel("Scene1");
+
+		// Going from Start Scene to Apartment Scene when button clicked
+		PlayerPrefs.SetInt( "previousLevel", (SceneManager.GetActiveScene()).buildIndex );
+		SceneManager.LoadScene("Scene1");
+
 	}
 }

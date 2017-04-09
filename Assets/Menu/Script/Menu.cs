@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class Menu : MonoBehaviour
@@ -20,7 +21,7 @@ public class Menu : MonoBehaviour
 		if(GUI.Button(new Rect(Screen.width / 2 - 75,70,150,50),"Fridge Purge"))
 		{
 			loading = true;
-			Application.LoadLevel("FridgePurge");
+			SceneManager.LoadScene("FridgePurge");
 		}
 		if (loading)
 		{
