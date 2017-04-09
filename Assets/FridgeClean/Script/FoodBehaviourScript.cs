@@ -62,18 +62,15 @@ public class FoodBehaviourScript : MonoBehaviour {
 		//If x position is over 0 go left
 		if (go.transform.position.x > 0)
 		{
-			go.AddComponent<Rigidbody2D>();
 			go.GetComponent<Rigidbody2D>().AddForce(new Vector3(-leftRightForce,upForce,0));
 		}
 		//Else go right
 		else
 		{
-			go.AddComponent<Rigidbody2D>();
 			go.GetComponent<Rigidbody2D>().AddForce(new Vector3(leftRightForce,upForce,0));
 		}
-
 		//Start the spawn again
-		StartCoroutine("Spawn");
+		//StartCoroutine("Spawn");
 	}
 
 	// Main loop for the sprite.  Move up, then wait, then move down again. Simple.
