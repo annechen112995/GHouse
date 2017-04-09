@@ -6,6 +6,22 @@ public class dryer2 : MonoBehaviour {
 	int maxHold = 12;
 	float delayTime = 15f;
 
+	public Sprite notUsed;
+	public Sprite inUse;
+	public Sprite done;
+
+	void Update() {
+		if (GameObject.Find("dryerManager").GetComponent<dryerScript>().in_use2 &&
+			GameObject.Find("dryerManager").GetComponent<dryerScript>().done2) {
+			this.gameObject.GetComponent<SpriteRenderer>().sprite = done;
+		}
+		else if (GameObject.Find("dryerManager").GetComponent<dryerScript>().in_use2) {
+			this.gameObject.GetComponent<SpriteRenderer>().sprite = inUse;
+		}
+		else {
+			this.gameObject.GetComponent<SpriteRenderer>().sprite = notUsed;
+		}
+	}
 
 	// If clicked
 	void OnMouseDown() {
@@ -25,6 +41,7 @@ public class dryer2 : MonoBehaviour {
 					GameObject.Find("dryerManager").GetComponent<dryerScript>().in_use2 = true;
 					GameObject.Find("dryerManager").GetComponent<dryerScript>().done2 = false;
 					GameObject.Find("dryerManager").GetComponent<dryerScript>().timeLeft2 = delayTime;
+					this.gameObject.GetComponent<SpriteRenderer>().sprite = inUse;
 					return;
 				}
 
@@ -35,6 +52,7 @@ public class dryer2 : MonoBehaviour {
 					GameObject.Find("dryerManager").GetComponent<dryerScript>().in_use2 = true;
 					GameObject.Find("dryerManager").GetComponent<dryerScript>().done2 = false;
 					GameObject.Find("dryerManager").GetComponent<dryerScript>().timeLeft2 = delayTime;
+					this.gameObject.GetComponent<SpriteRenderer>().sprite = inUse;
 					return;
 				}
 			}
@@ -46,6 +64,7 @@ public class dryer2 : MonoBehaviour {
 			GameObject.Find("dryerManager").GetComponent<dryerScript>().hold2 = 0;
 			GameObject.Find("dryerManager").GetComponent<dryerScript>().in_use2 = false;
 			GameObject.Find("dryerManager").GetComponent<dryerScript>().done2 = false;
+			this.gameObject.GetComponent<SpriteRenderer>().sprite = notUsed;
 			return;
 		
 		}

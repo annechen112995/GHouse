@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Laundry/Scenes/GameOver.unity
+- path: Assets/Laundry/Scenes/Laundry_apartment.unity
   isLoaded: 1
   isActive: 1

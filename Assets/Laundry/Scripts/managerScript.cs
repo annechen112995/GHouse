@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class managerScript : MonoBehaviour {
 	public int numDirtyCloth;  // number of dirty cloth in basket
@@ -44,7 +45,7 @@ public class managerScript : MonoBehaviour {
 			timer = delay;
 		}
 
-		if (numDirtyCloth >= 80) {
+		if (numDirtyCloth >= 40) {
 			Destroy(this.gameObject);
 			SceneManager.LoadScene ("GameOver");
 
