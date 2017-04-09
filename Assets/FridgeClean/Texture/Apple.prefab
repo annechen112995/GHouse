@@ -20,10 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4235770038302904}
   - component: {fileID: 212495098142726124}
-  - component: {fileID: 50949047576150386}
-  - component: {fileID: 58383360014184002}
-  - component: {fileID: 114735742422980860}
-  - component: {fileID: 114304726002819070}
+  - component: {fileID: 65652440588875512}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Respawn
@@ -44,66 +41,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50949047576150386
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!65 &65652440588875512
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1815362933946912}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!58 &58383360014184002
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1815362933946912}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.02484216, y: 0}
+  m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.282982
---- !u!114 &114304726002819070
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1815362933946912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efcc3f3be225c422390cb021d2682d34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skin: {fileID: 0}
-  score: 0
-  lives: 0
---- !u!114 &114735742422980860
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1815362933946912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8acb7a30c1e034837a3a70cc231310c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Size: {x: 2.64, y: 2.98, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &212495098142726124
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -133,8 +82,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 771169021
-  m_SortingLayer: 4
+  m_SortingLayerID: 1859086223
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f0460941332d04e06acc01946d2c39db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

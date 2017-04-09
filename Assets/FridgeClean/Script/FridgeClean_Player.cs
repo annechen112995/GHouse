@@ -68,20 +68,21 @@ public class FridgeClean_Player : MonoBehaviour
 
 	void OnMouseDown()
 	{
+		GameObject food = this.gameObject;
 		//If we hits an apple core
-		if (this.tag == "Untagged")
+		if (food.tag == "Untagged")
 		{
 			//Run hit function
-			this.GetComponent<FridgeClean_Core>().Hit();
-			Object.Destroy (this.gameObject);
+			food.GetComponent<FridgeClean_Core>().Hit();
+			Object.Destroy (food);
 			//Add score
 			score += 1;
 		}
 		//If we hits an apple
-		else if (this.tag == "Respawn")
+		else if (food.tag == "Respawn")
 		{
 			//Run hit function
-			this.GetComponent<FridgeClean_Apple>().Hit();
+			food.GetComponent<FridgeClean_Apple>().Hit();
 		}
 	}
 
