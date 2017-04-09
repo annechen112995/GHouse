@@ -9,7 +9,7 @@ public class ClickStart : MonoBehaviour {
 
 		// Going from Start Scene to Apartment Scene when button clicked
 		PlayerPrefs.SetInt( "previousLevel", (SceneManager.GetActiveScene()).buildIndex );
-		SceneManager.LoadScene("Scene1");
+		SceneManager.LoadScene(levelName);
 
 	}
 }

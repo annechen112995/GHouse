@@ -1,5 +1,12 @@
 sceneSetups:
 <<<<<<< HEAD
+- path: Assets/SceneCockroach/cockroachGame.unity
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+- path: Assets/StartGame/Scene0.unity
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -19,8 +26,16 @@ sceneSetups:
 - path: Assets/Laundry/Scenes/Laundry_apartment.unity
 >>>>>>> new
 >>>>>>> f9f29c22c076b6a22465f3d25f641371707e5534
+<<<<<<< HEAD
+>>>>>>> 9c8ec2ac31aa429dcdbab9b1a4df8358e1401eed
+=======
 =======
 - path: Assets/Laundry/Scenes/Laundry_hallway.unity
 >>>>>>> new
+>>>>>>> 606bf6dcb430e65faa5849263b2d3ef6720e78b4
+=======
+- path: Assets/Laundry/Scenes/Laundry_laundryRoom.unity
+>>>>>>> new
+>>>>>>> 0ed5fc83813f69f1d10481a443f94243b43cba50
   isLoaded: 1
   isActive: 1
