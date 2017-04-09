@@ -3,6 +3,7 @@ sceneSetups:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/SceneCockroach/cockroachGame.unity
 =======
 - path: Assets/FridgeClean/Scene/Scene2.unity
@@ -18,5 +19,8 @@ sceneSetups:
 - path: Assets/Laundry/Scenes/Laundry_apartment.unity
 >>>>>>> new
 >>>>>>> f9f29c22c076b6a22465f3d25f641371707e5534
+=======
+- path: Assets/Laundry/Scenes/Laundry_hallway.unity
+>>>>>>> new
   isLoaded: 1
   isActive: 1
