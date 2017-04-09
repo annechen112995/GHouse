@@ -1,7 +1,7 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GHouse", "Assembly-CSharp.csproj", "{414722B2-B610-590D-43FA-0FC4B56EEB36}"
+# Visual Studio 2008
+
+Project("{8C0BFF1C-057F-3774-FEEF-264FA7975725}") = "GHouse", "Assembly-CSharp.csproj", "{414722B2-B610-590D-43FA-0FC4B56EEB36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
