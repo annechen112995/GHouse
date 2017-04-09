@@ -3,12 +3,18 @@ using System.Collections;
 
 public class FridgeClean_Player : MonoBehaviour
 {
+	public FoodBehaviourScript foodBehav;
 	public GUISkin skin;	//GUI Skin
 	public int score;		//Score
-	public int lives;		//Lives
+	public int lives = 3;		//Lives
+	public int count = 6;
+
+	public GameObject splat;
 
 	private Vector3 pos;	//Position
-	private bool dead;		//If we are dead
+	private bool dead = false;		//If we are dead
+
+	private float timeLimit = 3.0f;
 
 	void Start ()
 	{
@@ -16,15 +22,16 @@ public class FridgeClean_Player : MonoBehaviour
 		Screen.orientation = ScreenOrientation.Portrait;
 		//Set sleep timeout to never
 		Screen.sleepTimeout = SleepTimeout.NeverSleep;
+		foodBehav = this.gameObject.GetComponent<FoodBehaviourScript>();
+		foodBehav.enabled = false;
 	}
 
 	void Update ()
 	{
+		WaitForHit();
 		//If dead
 		if (dead)
 		{
-			//Set collider to false
-			GetComponent<Collider>().enabled = false;
 			return;
 		}
 		//If we have 0 lives left
@@ -32,52 +39,43 @@ public class FridgeClean_Player : MonoBehaviour
 		{			
 			//Kill
 			dead = true;
-			//Set collider to false
-			GetComponent<Collider>().enabled = false;
 		}
-
-		//If the game is running on a android device
-		if (Application.platform == RuntimePlatform.Android)
-		{
-			//If we are hitting the screen
-			if (Input.touchCount == 1)
-			{
-				//Find screen touch position
-				pos = Camera.main.ScreenToWorldPoint(new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, 1));
-				//Set position
-				transform.position = new Vector3(pos.x,pos.y,0);
-				//Set collider to true
-				GetComponent<Collider>().enabled = true;
-				return;
-			}
-			//Set collider to false
-			GetComponent<Collider>().enabled = false;
-		}
-		//If the game is not running on a android device
-		else
-		{
-			//Find mouse position
-			pos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
-			//Set position
-			transform.position = new Vector3(pos.x,pos.y,0);
-		}
+		while (count <= 0) {
+			foodBehav.enabled = true;
+			count += 6;
+		} 
+		foodBehav.enabled = false;
+			
 	}
 
-	void OnTriggerEnter(Collider other)
+	void OnMouseDown()
 	{
+		Object.Destroy (this.gameObject);
 		//If we hits an apple core
-		if (other.tag == "Untagged")
+		if (this.gameObject.tag == "Untagged")
 		{
-			//Run hit function
-			other.GetComponent<FridgeClean_Core>().Hit();
+			Instantiate(splat,new Vector3(transform.position.x,transform.position.y,1),Quaternion.identity);
 			//Add score
 			score += 1;
 		}
 		//If we hits an apple
-		else if (other.tag == "Respawn")
+		else if (this.gameObject.tag == "Respawn")
 		{
-			//Run hit function
-			other.GetComponent<FridgeClean_Apple>().Hit();
+			//Removes a life
+			lives--;
+		}
+		count--;
+	}
+
+	// Give the player a chance to click the food.
+	IEnumerator WaitForHit()
+	{
+		float time = 0.0f;
+
+		while(Input.touchCount != 1 && time < timeLimit)
+		{
+			time += Time.deltaTime;
+			yield return null;
 		}
 	}
 
@@ -107,12 +105,12 @@ public class FridgeClean_Player : MonoBehaviour
 			//Application.LoadLevel("Menu");
 		}
 		//If dead
-		if (dead)
+		if (dead == true)
 		{
 			//Play Again Button
 			if(GUI.Button(new Rect(Screen.width / 2 - 90,Screen.height / 2 - 60,180,50),"Play Again"))
 			{
-				Application.LoadLevel("FridgeClean");
+				//SceneManager.LoadScene("FridgeClean");
 			}
 			//Menu Button
 			if(GUI.Button(new Rect(Screen.width / 2 - 90,Screen.height / 2,180,50),"Menu"))
