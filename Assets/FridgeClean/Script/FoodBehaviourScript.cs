@@ -42,9 +42,9 @@ public class FoodBehaviourScript : MonoBehaviour {
 				//Spawn prefab is apple core
 				prefab = AppleCore;
 			}
-				//Spawn prefab add random position
-				GameObject go = Instantiate (prefab, new Vector3 (Random.Range (-50, 60), Random.Range (-60, 50), 0),
-					Quaternion.Euler (0, 0, Random.Range (-100, 50))) as GameObject;
+			//Spawn prefab add random position
+			GameObject go = Instantiate (prefab, new Vector3 (Random.Range (-50, 60), Random.Range (-60, 50), 0),
+				Quaternion.Euler (0, 0, Random.Range (-100, 50))) as GameObject;
 		}
 		spawned = true;
 	}
