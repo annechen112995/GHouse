@@ -6,6 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
+    path: Assets/Laundry/Scenes/Laundry_hallway.unity
+    guid: 0985cf8ce426a4538af4a79d3d41d76c
+=======
     path: Assets/StartGame/Scene0.unity
     guid: 94797e7c0f2aa4c5294d6f2cdcabd03a
   - enabled: 1
@@ -14,10 +18,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FridgeClean/Scene/Scene2.unity
     guid: 912e798f1185347cea854e925586964e
+>>>>>>> ac5ab5eb956c3db2ded69d92b9d5b629ada939fd
   - enabled: 1
     path: Assets/Laundry/Scenes/Laundry_apartment.unity
     guid: 0e4c7849c98a74447baf59792a50db06
   - enabled: 1
+<<<<<<< HEAD
+    path: Assets/Laundry/Scenes/Laundry_laundryRoom.unity
+    guid: 6075d3bcf4cdf43678d6ba2492885bc9
+=======
     path: Assets/Laundry/Scenes/Laundry_hallway.unity
     guid: 0985cf8ce426a4538af4a79d3d41d76c
   - enabled: 1
@@ -26,3 +35,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SceneCockroach/cockroachGame.unity
     guid: 27479f471284342458c338de31d3e942
+>>>>>>> ac5ab5eb956c3db2ded69d92b9d5b629ada939fd
