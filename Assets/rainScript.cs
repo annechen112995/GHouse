@@ -48,7 +48,6 @@ public class rainScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		/*
 		rainSpeed = manager.rainSpeed;
 		if (Mathf.Abs (transform.position.x) < 3f && Mathf.Abs (transform.position.y) < 5f) {
 			startDie = true;
@@ -60,6 +59,6 @@ public class rainScript : MonoBehaviour {
 		}
 
 		transform.Translate(Vector3.down * rainSpeed);
-		*/
+
 	}
 }

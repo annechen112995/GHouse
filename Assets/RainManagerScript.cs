@@ -13,7 +13,6 @@ public class RainManagerScript : MonoBehaviour {
 	private float angleChangeTime = 10f;
 	public float rainSpeed = 0.05f;
 	private float rainSpawnTime = .5f;
-	private int spawnNumber = 50;
 	public float catSpeed = 0.05f;
 	public float scoreTime = 1f;
 
@@ -44,7 +43,7 @@ public class RainManagerScript : MonoBehaviour {
 		float leftCoord = -8.0f;
 		float rightCoord = 8.0f;
 
-		for (float i = leftCoord; i < rightCoord; i += 0.4f) {
+		for (float i = leftCoord; i < rightCoord; i += 0.7f) {
 			float yOffset = Random.Range (-0.9f, 0.9f);
 			Vector3 loc = new Vector3 (i, 6f + yOffset, 0f);
 

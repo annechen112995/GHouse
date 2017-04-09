@@ -9,7 +9,7 @@ public class QuitCatScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		gameManager = GameObject.Find("GameManager"); 
+		gameManager = GameObject.Find("RainGameManager"); 
 		manager = gameManager.GetComponent<RainManagerScript>();
 	}
 
