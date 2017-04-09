@@ -4,4 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
   m_Scenes: []
+=======
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Laundry/Scenes/Laundry_apartment.unity
+    guid: 0e4c7849c98a74447baf59792a50db06
+  - enabled: 1
+    path: Assets/Laundry/Scenes/Laundry_hallway.unity
+    guid: 0985cf8ce426a4538af4a79d3d41d76c
+  - enabled: 1
+    path: Assets/Laundry/Scenes/Laundry_laundryRoom.unity
+    guid: 6075d3bcf4cdf43678d6ba2492885bc9
+>>>>>>> new
