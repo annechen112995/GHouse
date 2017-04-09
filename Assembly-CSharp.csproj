@@ -58,13 +58,14 @@
      <Compile Include="Assets\Laundry\Scripts\toHallWay.cs" />
      <Compile Include="Assets\Laundry\Scripts\toLaundry.cs" />
      <Compile Include="Assets\Menu\Script\Menu.cs" />
+     <Compile Include="Assets\QuitCockroach.cs" />
      <Compile Include="Assets\SceneAptmt\Scripts\BackButtonAptmt.cs" />
      <Compile Include="Assets\SceneAptmt\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\SceneAptmt\Scripts\GameControl.cs" />
      <Compile Include="Assets\SceneAptmt\Scripts\LaunchGame.cs" />
      <Compile Include="Assets\SceneCockroach\BackButtonFromRoach.cs" />
      <Compile Include="Assets\StartGame\Script\BackButtonStart.cs" />
      <Compile Include="Assets\StartGame\Script\ClickStart.cs" />
-     <Compile Include="Assets\StartGame\Script\GameControl.cs" />
      <Compile Include="Assets\cockroachManagerScript.cs" />
      <Compile Include="Assets\liveScript.cs" />
      <Compile Include="Assets\roachScript.cs" />

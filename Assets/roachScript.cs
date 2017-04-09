@@ -8,19 +8,20 @@ public class roachScript : MonoBehaviour {
 	private GameObject gameManager;
 	cockroachManagerScript manager;
 
-
 	// Use this for initialization
 	void Start () {
 		gameManager = GameObject.Find("GameManager"); 
 		manager = gameManager.GetComponent<cockroachManagerScript>();
 		speed = manager.currSpeed;
-		
 	}
+
 	void die() {
 		Object.Destroy (this.gameObject);
 		manager.lives -= 1;
 		if (manager.lives < 1) {
 			manager.CancelInvoke ();
+			PlayerPrefs.SetInt("coins", manager.score + PlayerPrefs.GetInt("coins"));
+			PlayerPrefs.Save();
 		}
 	}
 
@@ -36,7 +37,7 @@ public class roachScript : MonoBehaviour {
 		}
 		if (startDie) {
 			if (Mathf.Abs (transform.position.x) > 3f || Mathf.Abs (transform.position.y) > 5f) {
-				die ();
+				die();
 			}
 		}
 			

@@ -12,13 +12,13 @@ public class cockroachManagerScript : MonoBehaviour {
 	public GameObject roach;
 	public float radius = 8f;
 	private float spawnTime = 2f;
-	private float spawnFasterTime = 20f;
+	private float spawnFasterTime = 15f;
 	private float speedUpTime = 30f;
 	private float speedUpFactor = 1.09f;
 
 	// Use this for initialization
 	void Start () {
-
+		score = 0;
 		InvokeRepeating ("SpeedUp", speedUpTime, speedUpTime);
 		InvokeRepeating ("Spawnfaster", spawnFasterTime,spawnFasterTime);
 		InvokeRepeating ("Spawn", spawnTime, spawnTime);
@@ -37,9 +37,7 @@ public class cockroachManagerScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (lives < 1) {
-			CancelInvoke ();
-		}
+
 	}
 	void Spawn() {
 		for (int i = 0; i < spawnRate; i++){
