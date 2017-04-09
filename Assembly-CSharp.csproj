@@ -57,7 +57,9 @@
      <Compile Include="Assets\FridgePurge\Script\FridgePurge_Splat.cs" />
      <Compile Include="Assets\Laundry\ChangeDisplay.cs" />
      <Compile Include="Assets\Laundry\Scripts\Basket.cs" />
+     <Compile Include="Assets\Laundry\Scripts\cameraScroll.cs" />
      <Compile Include="Assets\Laundry\Scripts\managerScript.cs" />
+     <Compile Include="Assets\Laundry\Scripts\toHallWay.cs" />
      <Compile Include="Assets\Menu\Script\Menu.cs" />
      <Compile Include="Assets\SceneAptmt\Scripts\BackButtonAptmt.cs" />
      <Compile Include="Assets\SceneAptmt\Scripts\CameraFollow.cs" />
