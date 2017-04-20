@@ -14,7 +14,6 @@ public class CatScoreScript : MonoBehaviour {
 		currScore = GetComponent<UnityEngine.UI.Text>();
 		gameManager = GameObject.Find("RainGameManager"); 
 		manager = gameManager.GetComponent<RainManagerScript>();
-
 	}
 
 	// Update is called once per frame

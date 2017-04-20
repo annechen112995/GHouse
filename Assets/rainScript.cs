@@ -17,7 +17,6 @@ public class rainScript : MonoBehaviour {
 	void Start () {
 		gameManager = GameObject.Find("RainGameManager"); 
 		manager = gameManager.GetComponent<RainManagerScript>();
-	
 	}
 
 	void hit() {
@@ -34,7 +33,6 @@ public class rainScript : MonoBehaviour {
 		Object.Destroy (this.gameObject);
 	}
 
-
 	void OnTriggerEnter(Collider col){
 		
 		if (col.gameObject.name == "Cat") {
@@ -43,6 +41,10 @@ public class rainScript : MonoBehaviour {
 		if (col.gameObject.name == "Umbrella") {
 			die ();
 		}
+	}
+
+	void OnBecameInvisible() {
+		Destroy (gameObject);
 	}
 
 	// Update is called once per frame
@@ -61,4 +63,5 @@ public class rainScript : MonoBehaviour {
 		transform.Translate(Vector3.down * rainSpeed);
 
 	}
+		
 }

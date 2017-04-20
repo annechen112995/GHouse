@@ -1,18 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SceneCockroach/BackButtonFromRoach.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SnakeScene/Scripts/SnakeScript.cs">
     <Files>
-      <File FileName="Assets/UmbrellaScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/roachScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/cockroachManagerScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/Laundry/Scripts/Basket.cs" Line="1" Column="1" />
-      <File FileName="Assets/liveScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/scoreScript.cs" Line="15" Column="49" />
-      <File FileName="Assets/RainManagerScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/rainScript.cs" Line="47" Column="2" />
-      <File FileName="Assets/catScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/CatScoreScript.cs" Line="22" Column="24" />
-      <File FileName="Assets/SceneCockroach/BackButtonFromRoach.cs" Line="14" Column="18" />
+      <File FileName="Assets/SnakeScene/Scripts/SpawnFood.cs" Line="24" Column="28" />
+      <File FileName="Assets/SnakeScene/Scripts/SnakeScript.cs" Line="167" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

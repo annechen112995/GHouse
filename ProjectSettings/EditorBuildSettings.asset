@@ -35,3 +35,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/CatScene/CatRainGame.unity
     guid: 20f3d6f5440f64cd5a24ebf4fa0a8e55
+  - enabled: 1
+    path: Assets/SnakeScene/SnakeScene.unity
+    guid: 323bc63233eae4459a25fb7b5d526f71

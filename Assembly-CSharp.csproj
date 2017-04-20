@@ -72,6 +72,7 @@
      <Compile Include="Assets\Menu\Script\Menu.cs" />
      <Compile Include="Assets\QuitCatScript.cs" />
      <Compile Include="Assets\QuitCockroach.cs" />
+     <Compile Include="Assets\QuitScript.cs" />
      <Compile Include="Assets\RainManagerScript.cs" />
      <Compile Include="Assets\SceneAptmt\Scripts\BackButtonAptmt.cs" />
      <Compile Include="Assets\SceneAptmt\Scripts\CameraFollow.cs" />
@@ -79,6 +80,8 @@
      <Compile Include="Assets\SceneAptmt\Scripts\LaunchGame.cs" />
      <Compile Include="Assets\SceneCockroach\BackButtonFromRoach.cs" />
      <Compile Include="Assets\ShopScene\BuyFish.cs" />
+     <Compile Include="Assets\SnakeScene\Scripts\SnakeScript.cs" />
+     <Compile Include="Assets\SnakeScene\Scripts\SpawnFood.cs" />
      <Compile Include="Assets\StartGame\Script\BackButtonStart.cs" />
      <Compile Include="Assets\StartGame\Script\ClickStart.cs" />
      <Compile Include="Assets\UmbrellaScript.cs" />
