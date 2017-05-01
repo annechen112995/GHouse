@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class dryerScript : MonoBehaviour {
+	// stats for dryer 1
 	public bool in_use1;
 	public bool done1;
 	public int hold1;
 	public float timeLeft1;
 
+	// stats for dryer 2
 	public bool in_use2;
 	public bool done2;
 	public int hold2;
@@ -15,10 +17,12 @@ public class dryerScript : MonoBehaviour {
 
 	static bool created = false;
 
+	// initializing the dryer manager
 	void Start () {
 		if (!created) {
 			DontDestroyOnLoad(this.gameObject);
 			created = true;
+
 			in_use1 = false;
 			done1 = false;
 			hold1 = 0;
@@ -36,23 +40,21 @@ public class dryerScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-				// Counting wash cycle
+
+		// Counting wash cycle for dryer 1
 		timeLeft1 -= Time.deltaTime;
-        if(timeLeft1 < 0)
-        {
+        if(timeLeft1 < 0) {
              done1 = true;
 			 GameObject.Find("dryer1").gameObject.GetComponent<SpriteRenderer>().sprite = 
-			  GameObject.Find("dryer1").gameObject.GetComponent<dryer1>().done;
+			  			GameObject.Find("dryer1").gameObject.GetComponent<dryer1>().done;
         }
 
-		// Counting wash cycle
+		// Counting wash cycle for dryer 2
 		timeLeft2 -= Time.deltaTime;
-        if(timeLeft2 < 0)
-        {
+        if(timeLeft2 < 0) {
              done2 = true;
 			 GameObject.Find("dryer2").gameObject.GetComponent<SpriteRenderer>().sprite = 
-			  GameObject.Find("dryer2").gameObject.GetComponent<dryer2>().done;
+			  			GameObject.Find("dryer2").gameObject.GetComponent<dryer2>().done;
         }
-		
 	}
 }

@@ -10,7 +10,7 @@ public class dryer1 : MonoBehaviour {
 	public Sprite inUse;
 	public Sprite done;
 
-
+	// Update image of dryer base on status
 	void Update() {
 		if (GameObject.Find("dryerManager").GetComponent<dryerScript>().in_use1 &&
 			GameObject.Find("dryerManager").GetComponent<dryerScript>().done1) {
@@ -25,14 +25,14 @@ public class dryer1 : MonoBehaviour {
 	}
 
 
-	// If clicked
+	// If clicked (either unload, load, or do nothing)
 	void OnMouseDown() {
 		int hold = GameObject.Find("dryerManager").GetComponent<dryerScript>().hold1;
 		bool in_use = GameObject.Find("dryerManager").GetComponent<dryerScript>().in_use1;
 		bool done = GameObject.Find("dryerManager").GetComponent<dryerScript>().done1;
 
 
-		// If the dryer is not in use, then put cloth to wash
+		// If the dryer is not in use, then put cloth to dry
 		if (!in_use) {
 			int toDry = GameObject.Find("GameManager").GetComponent<managerScript>().numToDry;
 			if (toDry > 0) {
@@ -58,7 +58,7 @@ public class dryer1 : MonoBehaviour {
 			}
 		}
 
-		// If the dryer is in use but done
+		// If the dryer is in use but done, unload --> add to score
 		else if (in_use && done) {
 			GameObject.Find("GameManager").GetComponent<managerScript>().coins += hold;
 			GameObject.Find("dryerManager").GetComponent<dryerScript>().hold1 = 0;

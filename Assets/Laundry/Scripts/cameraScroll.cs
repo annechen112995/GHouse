@@ -19,6 +19,29 @@ public class cameraScroll : MonoBehaviour {
 				Mathf.Clamp(transform.position.z, -10, -10));
 		}
 
+		if (Input.GetKey(KeyCode.LeftArrow))
+		{
+			transform.Translate (-5 * Time.deltaTime, 
+				0, 0);
+
+			transform.position = new Vector3(
+				Mathf.Clamp(transform.position.x, 0, x_max),
+				Mathf.Clamp(transform.position.y, 0, 0),
+				Mathf.Clamp(transform.position.z, -10, -10));
+
+		}
+		if (Input.GetKey(KeyCode.RightArrow))
+		{
+			transform.Translate (5 * Time.deltaTime, 
+				0, 0);
+			
+			transform.position = new Vector3(
+				Mathf.Clamp(transform.position.x, 0, x_max),
+				Mathf.Clamp(transform.position.y, 0, 0),
+				Mathf.Clamp(transform.position.z, -10, -10));
+
+		}
+
 	}
 }
  

@@ -2,24 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class game_over : MonoBehaviour {
 
-	float timer = 3f;
+	public Text display;
 
-	// Use this for initialization
-	void Start () {
-		
+	int score = 0; 
+
+	void Start() {
+		score =  GameObject.Find("GameManager").GetComponent<managerScript>().coins;
+		Destroy(GameObject.Find("GameManager"));
+		display.text = "You have washed " + score + " dirty clothes. \n\n Score: " + score;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-		timer -= Time.deltaTime;
-		if (timer <= 0) {
-			SceneManager.LoadScene ("Scene1");
-		}
-
+		
 		
 	}
 }
